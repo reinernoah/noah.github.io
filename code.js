@@ -25,7 +25,7 @@ function email() {
     video.play();
 }
 function resume() {
-    var video = document.getElementById('Resume');
+    var video = document.getElementById('resume');
     video.play();
 }
 
