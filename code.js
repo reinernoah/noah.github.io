@@ -34,6 +34,11 @@ function resume() {
     video.play();
 }
 
+function more() {
+    var video = document.getElementById('movies');
+    video.play();
+}
+
 // creates a hover effect that changes the color of a square to black when the mouse passes over it, leaving a (pixel) trail through the grid
 // allows the click of a button to prompt the user to create a new grid
 $(document).ready(function() {
@@ -51,6 +56,7 @@ $(document).ready(function() {
     		Count = Count + 1;
             email();
             resume();
+	    more();
     		}
     		else if (Count == 2){
     		video.src = "Jerry.mp4";
@@ -77,6 +83,7 @@ $(document).ready(function() {
     		Count = Count + 1;
             email();
             resume();
+	    more();
     		}
     		else if (Count == 2){
     		video.src = "Sergio.mp4";
