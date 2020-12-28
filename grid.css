@@ -67,6 +67,14 @@
 	margin-left:50%;
 	background-color: transparent;
 }
+#movies{
+	position: absolute;
+	top: 0%;
+	right:0%;
+	left: 30%;
+	margin-left:50%;
+	background-color: transparent;
+}
 .grid {
 	position:absolute;
 	width:5%;
@@ -80,8 +88,8 @@
 
 .grid2 {
 	position:absolute;
-	width:20%;
-	height:5%;
+	width:30%;
+	height:7%;
 	margin:0;
 	padding:0;
 	border:none;
@@ -107,13 +115,19 @@
 #button3{
 	position: absolute;
 	bottom: 19%;
-	left:40%;
+	left:35%;
 	cursor:pointer;
 }
 
 #button4{
 	position: absolute;
 	bottom:19%;
-	right:0%;
+	left:77%;
+	cursor:pointer;
+}
+#button5{
+	position: absolute;
+	bottom:84%;
+	left:90%;
 	cursor:pointer;
 }
