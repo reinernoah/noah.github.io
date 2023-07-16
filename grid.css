@@ -46,17 +46,6 @@
 	z-index: -1;
 
 }
-#cv{
-	position: absolute;
-	width:100%;
-	height:auto;
-	bottom: 1%;
-	right:1%;
-	left: 0%;
-	margin-right:10%;
-	background-color: transparent;
-}
-
 #mail{
 	position: absolute;
 	width:100%;
