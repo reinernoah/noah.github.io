@@ -29,10 +29,6 @@ function email() {
     var video = document.getElementById('gmail');
     video.play();
 }
-function resume() {
-    var video = document.getElementById('resume');
-    video.play();
-}
 
 function more() {
     var video = document.getElementById('movies');
@@ -48,14 +44,13 @@ $(document).ready(function() {
     	var video = document.getElementById('content');
     	setTimeout(function(){
     		if (Count == 0){
-    		video.src = "Stranger.mp4";
+    		video.src = "Reel.mp4";
     		Count = Count + 1;
     		}
     		else if (Count == 1){
-    		video.src = "Banjo.mp4";
+    		video.src = "Stranger.mp4";
     		Count = Count + 1;
             email();
-            resume();
     		}
     		else if (Count == 2){
     		video.src = "Jerry.mp4";
@@ -75,7 +70,7 @@ $(document).ready(function() {
     	var video = document.getElementById('content');
     	setTimeout(function(){
     		if (Count == 0){
-    		video.src = "Stranger.mp4";
+    		video.src = "Reel.mp4";
     		Count = Count + 1;
     		}
     		else if (Count == 1){
