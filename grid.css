@@ -85,6 +85,38 @@ body {
 }
 
 
+#button1 {
+  position: absolute;
+  top: 35%; /* Adjust the vertical position as needed */
+  right: 15%; /* Adjust the horizontal position as needed */
+  cursor: pointer;
+}
+
+#button2 {
+  position: absolute;
+  top: 44%; /* Adjust the vertical position as needed */
+  right: 15%; /* Adjust the horizontal position as needed */
+  cursor: pointer;
+}
+
+#button3 {
+  position: absolute;
+  bottom: 30px; /* Adjust the distance from the bottom as needed */
+  left: 35%;
+  cursor: pointer;
+  width: 30%; /* Adjust the width as needed */
+  height: 20%;
+}
+
+#button4 {
+  position: absolute;
+  bottom: 60px; /* Adjust the distance from the bottom as needed */
+  left: 77%;
+  cursor: pointer;
+  width: 30%; /* Adjust the width as needed */
+  height: 20;
+}
+
 /* Add media queries for responsiveness */
 @media (max-width: 767px) {
   #video {
