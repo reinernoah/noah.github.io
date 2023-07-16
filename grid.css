@@ -1,83 +1,61 @@
 .container {
   position: relative;
-  top: 5%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  margin-right: 27%;
-  padding-top: 0;
-  background-color: transparent;
-  background-position: cover;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-#hand {
-  position: absolute;
-  height: 60%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin-right: 0;
-  padding-right: 0;
-  overflow: hidden;
-  background-color: transparent;
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.responsive-video {
+  max-width: 100%;
+  height: auto;
 }
 
 #load {
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: auto;
-  background-color: transparent;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #video {
-  position: absolute;
-  outline: none;
-  top: 33.5%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: 0;
-  overflow: hidden;
-  background-color: transparent;
-  background-position: center;
-  z-index: -1;
-}
-
-#cv {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: auto;
-  bottom: 1%;
-  right: 1%;
-  left: 0;
-  margin-right: 10%;
-  background-color: transparent;
+  margin: 0 auto;
+  text-align: center;
 }
 
-#mail {
-  position: absolute;
+#cv,
+#mail,
+#vimeo {
+  position: relative;
   width: 100%;
-  height: auto;
-  top: 56%;
-  right: 1%;
-  left: 0;
-  margin-left: 50%;
-  background-color: transparent;
+  margin: 0 auto;
+  text-align: center;
 }
 
-#movies {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  margin-left: 50%;
-  background-color: transparent;
+#hand {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
+
+
+/* Add media queries for responsiveness */
+@media (max-width: 767px) {
+  #video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Add more media queries for different screen sizes if desired */
 
 .grid {
   position: absolute;
