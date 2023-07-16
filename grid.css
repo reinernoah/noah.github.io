@@ -123,24 +123,18 @@ body {
 
 #button3 {
   position: absolute;
-  bottom: 24%;
+  bottom: 30px; /* Adjust the distance from the bottom as needed */
   left: 35%;
   cursor: pointer;
 }
 
 #button4 {
   position: absolute;
-  bottom: 19%;
+  bottom: 60px; /* Adjust the distance from the bottom as needed */
   left: 77%;
   cursor: pointer;
 }
 
-#button5 {
-  position: absolute;
-  bottom: 84%;
-  left: 90%;
-  cursor: pointer;
-}
 
 /* Add media queries for responsiveness */
 @media (max-width: 767px) {
