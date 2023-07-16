@@ -140,6 +140,8 @@ body {
   bottom: 30px; /* Adjust the distance from the bottom as needed */
   left: 35%;
   cursor: pointer;
+  width: 20%; /* Adjust the width as needed */
+  height: auto;
 }
 
 #button4 {
@@ -147,6 +149,8 @@ body {
   bottom: 60px; /* Adjust the distance from the bottom as needed */
   left: 77%;
   cursor: pointer;
+  width: 20%; /* Adjust the width as needed */
+  height: auto;
 }
 
 
