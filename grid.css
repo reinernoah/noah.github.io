@@ -80,14 +80,14 @@
 
 #button1 {
     position: absolute;
-    top: calc(35% + 7%);
+    top: calc(45% + 7%);
     right: 1%;
     cursor: pointer;
 }
 
 #button2 {
     position: absolute;
-    top: calc(44% + 7%);
+    top: calc(55% + 7%);
     right: 1%;
     cursor: pointer;
 }
