@@ -46,29 +46,14 @@ body {
   height: auto;
 }
 
-#cv {
-  position: absolute;
-  bottom: 30px; /* Adjust the distance from the bottom as needed */
-  left: 35%;
-  cursor: pointer;
-  width: 30%; /* Adjust the width as needed */
-  height: 20%;
-}
-
+#cv,
 #mail {
   position: absolute;
-  bottom: 60px; /* Adjust the distance from the bottom as needed */
-  left: 77%;
+  bottom: 20px;
+  left: 35%;
   cursor: pointer;
-  width: 30%; /* Adjust the width as needed */
-  height: 20;
-}
-
-#vimeo {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
+  width: 30%;
+  height: auto;
 }
 
 #hand {
@@ -76,116 +61,27 @@ body {
   height: 60%;
   width: 100%;
   top: 0;
-  left: auto; /* Remove left: 0; */
   right: 0;
   margin-right: -65%;
-  padding-right: 15px; /* Add padding-right to adjust as needed */
+  padding-right: 15px;
   overflow: hidden;
   background-color: transparent;
 }
 
-
-#button1 {
+#button1,
+#button2,
+#button3,
+#button4,
+#button5 {
   position: absolute;
-  top: 35%; /* Adjust the vertical position as needed */
-  right: 15%; /* Adjust the horizontal position as needed */
+  top: 20px;
+  left: 20px;
   cursor: pointer;
+  width: 10%;
+  height: auto;
 }
 
-#button2 {
-  position: absolute;
-  top: 44%; /* Adjust the vertical position as needed */
-  right: 15%; /* Adjust the horizontal position as needed */
-  cursor: pointer;
-}
-
-#button3 {
-  position: absolute;
-  bottom: 30px; /* Adjust the distance from the bottom as needed */
-  left: 35%;
-  cursor: pointer;
-  width: 30%; /* Adjust the width as needed */
-  height: 20%;
-}
-
-#button4 {
-  position: absolute;
-  bottom: 60px; /* Adjust the distance from the bottom as needed */
-  left: 77%;
-  cursor: pointer;
-  width: 30%; /* Adjust the width as needed */
-  height: 20;
-}
-
-/* Add media queries for responsiveness */
-@media (max-width: 767px) {
-  #video {
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* Add more media queries for different screen sizes if desired */
-
-.grid {
-  position: absolute;
-  width: 5%;
-  height: 7%;
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: 0;
-  display: inline-block;
-  top: 20px; /* Adjust the top position as needed */
-  left: 20px; /* Adjust the left position as needed */
-}
-
-.grid2 {
-  position: absolute;
-  width: 30%;
-  height: 7%;
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: 0;
-  display: inline-block;
-  top: 20px; /* Adjust the top position as needed */
-  left: 20px; /* Adjust the left position as needed */
-}
-
-#button1 {
-  position: absolute;
-  top: 35%; /* Adjust the vertical position as needed */
-  right: 15%; /* Adjust the horizontal position as needed */
-  cursor: pointer;
-}
-
-#button2 {
-  position: absolute;
-  top: 44%; /* Adjust the vertical position as needed */
-  right: 15%; /* Adjust the horizontal position as needed */
-  cursor: pointer;
-}
-
-#button3 {
-  position: absolute;
-  bottom: 30px; /* Adjust the distance from the bottom as needed */
-  left: 35%;
-  cursor: pointer;
-  width: 30%; /* Adjust the width as needed */
-  height: 20%;
-}
-
-#button4 {
-  position: absolute;
-  bottom: 60px; /* Adjust the distance from the bottom as needed */
-  left: 77%;
-  cursor: pointer;
-  width: 30%; /* Adjust the width as needed */
-  height: 20;
-}
-
-
+/* Media queries for responsiveness */
 @media (max-width: 767px) {
   .container {
     max-width: 100%;
@@ -201,22 +97,13 @@ body {
     z-index: -1;
   }
 
-  .grid {
-    width: 20%;
-    height: auto;
-    top: 50%;
+  #cv,
+  #mail {
+    bottom: 30px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+    width: 90%;
   }
-
-  .grid2 {
-    width: 80%;
-    height: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
 
   #button1,
   #button2,
@@ -228,5 +115,6 @@ body {
     left: 0;
     transform: none;
     margin: 10px auto;
+    width: 40%;
   }
 }
