@@ -51,11 +51,12 @@ $(document).ready(function() {
     		video.src = "Stranger.mp4";
     		Count = Count + 1;
             email();
+	    more();
     		}
     		else if (Count == 2){
     		video.src = "Jerry.mp4";
     		Count = Count + 1;
-		more();
+		
     		}
     		else if (Count == 3){
     		video.src = "OJ.mp4";
@@ -77,12 +78,12 @@ $(document).ready(function() {
     		video.src = "Kla.mp4";
     		Count = Count + 1;
             email();
-            resume();
+ 	    more();
     		}
     		else if (Count == 2){
     		video.src = "Sergio.mp4";
     		Count = Count + 1;
-	    more();
+	    
     		}
     		else if (Count == 3){
     		video.src = "OJ.mp4";
