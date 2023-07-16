@@ -78,6 +78,40 @@
     height: auto;
 }
 
+#button1 {
+    position: absolute;
+    top: calc(35% + 7%);
+    right: 1%;
+    cursor: pointer;
+}
+
+#button2 {
+    position: absolute;
+    top: calc(44% + 7%);
+    right: 1%;
+    cursor: pointer;
+}
+
+#button3{
+	position: absolute;
+	bottom: 19%;
+	left:35%;
+	cursor:pointer;
+}
+
+#button4{
+	position: absolute;
+	bottom:19%;
+	left:77%;
+	cursor:pointer;
+}
+
+#button5{
+	position: absolute;
+	bottom:84%;
+	left:90%;
+	cursor:pointer;
+}
 
 
 .grid {
@@ -117,39 +151,14 @@
         position: static;
         transform: none;
     }
+
+    #button1,
+    #button2 {
+        position: static;
+        margin-top: 1rem;
+        margin-right: 1%;
+        width: 100%;
+    }
 }
 
-#button1{
-	position: absolute;
-	top: 35%;
-	right:1%;
-	cursor:pointer;
-}
 
-#button2{
-	position: absolute;
-	top:44%;
-	right:1%;
-	cursor:pointer;
-}
-
-#button3{
-	position: absolute;
-	bottom: 19%;
-	left:35%;
-	cursor:pointer;
-}
-
-#button4{
-	position: absolute;
-	bottom:19%;
-	left:77%;
-	cursor:pointer;
-}
-
-#button5{
-	position: absolute;
-	bottom:84%;
-	left:90%;
-	cursor:pointer;
-}
