@@ -155,36 +155,37 @@ body {
 }
 
 
-/* Add media queries for responsiveness */
 @media (max-width: 767px) {
   .container {
-    margin-right: 0;
     max-width: 100%;
-    padding: 10px;
-  }
-
-  #load {
-    top: 10%;
+    padding: 20px;
   }
 
   #video {
-    top: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 90%;
+    height: auto;
+    z-index: -1;
   }
-  
-   .grid {
-    width: 10%;
-    height: 14%;
-    top: 10px;
-    left: 10px;
+
+  .grid {
+    width: 20%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .grid2 {
-    width: 60%;
-    height: 14%;
-    top: 10px;
-    left: 10px;
+    width: 80%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
+
 
   #button1,
   #button2,
