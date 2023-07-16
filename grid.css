@@ -68,14 +68,18 @@
 	background-color: transparent;
 }
 
-#movies{
-	position: absolute;
-	top: 0%;
-	right:0%;
-	left: 30%;
-	margin-left:50%;
-	background-color: transparent;
+#movies {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    width: 100%;
+    height: auto;
 }
+
+
+
 .grid {
 	position:absolute;
 	width:5%;
@@ -85,6 +89,7 @@
 	border:none;
 	outline:0px solid white;
 	display:inline-block;
+	z-index: 1;
 }
 
 .grid2 {
@@ -96,8 +101,23 @@
 	border:none;
 	outline:0px solid blue;
 	display:inline-block;
+	z-index: 1;
 }
 
+/* New styles for video on mobile devices */
+@media (max-width: 767px) {
+    #video {
+        position: static;
+        background-position: center;
+        z-index: -1;
+        transform: none;
+    }
+
+    #movies {
+        position: static;
+        transform: none;
+    }
+}
 
 #button1{
 	position: absolute;
