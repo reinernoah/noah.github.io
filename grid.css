@@ -158,6 +158,8 @@ body {
 @media (max-width: 767px) {
   .container {
     margin-right: 0;
+    max-width: 100%;
+    padding: 10px;
   }
 
   #load {
@@ -167,6 +169,20 @@ body {
   #video {
     top: 20%;
     width: 90%;
+  }
+  
+   .grid {
+    width: 10%;
+    height: 14%;
+    top: 10px;
+    left: 10px;
+  }
+
+  .grid2 {
+    width: 60%;
+    height: 14%;
+    top: 10px;
+    left: 10px;
   }
 
   #button1,
