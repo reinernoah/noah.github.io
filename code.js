@@ -60,6 +60,7 @@ $(document).ready(function() {
     		else if (Count == 2){
     		video.src = "Jerry.mp4";
     		Count = Count + 1;
+            more();
     		}
     		else if (Count == 3){
     		video.src = "OJ.mp4";
@@ -74,7 +75,7 @@ $(document).ready(function() {
     	var video = document.getElementById('content');
     	setTimeout(function(){
     		if (Count == 0){
-    		video.src = "Stranger.mp4";
+    		video.src = "strange.mp4";
     		Count = Count + 1;
     		}
     		else if (Count == 1){
@@ -86,6 +87,7 @@ $(document).ready(function() {
     		else if (Count == 2){
     		video.src = "Sergio.mp4";
     		Count = Count + 1;
+            more();
     		}
     		else if (Count == 3){
     		video.src = "OJ.mp4";
@@ -95,3 +97,4 @@ $(document).ready(function() {
     	disbleMute()
 	});
 });
+
