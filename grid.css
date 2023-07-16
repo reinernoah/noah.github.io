@@ -28,6 +28,12 @@ body {
 #load {
   position: relative;
   width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 75%;
+  left: auto; /* Remove left: 0; */
+  right: 25%;
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
 }
