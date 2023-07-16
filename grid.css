@@ -1,3 +1,4 @@
+
 .container {
 	position: relative;
 	top: 5%;
@@ -29,10 +30,11 @@
 	left:47%;
 	height:auto;
 	background-color: transparent;
+
 }
-	
 #video {
 	position: absolute;
+	outline: none;
 	top: 33.5%;
 	right:0;
 	bottom: 0;
@@ -42,6 +44,7 @@
 	background-color:  transparent;
 	background-position: center;
 	z-index: -1;
+
 }
 #cv{
 	position: absolute;
@@ -53,6 +56,7 @@
 	margin-right:10%;
 	background-color: transparent;
 }
+
 #mail{
 	position: absolute;
 	width:100%;
@@ -63,6 +67,7 @@
 	margin-left:50%;
 	background-color: transparent;
 }
+
 #movies{
 	position: absolute;
 	top: 0%;
@@ -74,24 +79,54 @@
 .grid {
 	position:absolute;
 	width:5%;
-
-.grid2 {
-	position:absolute;width:30%;
 	height:7%;
 	margin:0;
 	padding:0;
 	border:none;
+	outline:0px solid white;
+	display:inline-block;
+}
+
+.grid2 {
+	position:absolute;
+	width:30%;
+	height:7%;
+	margin:0;
+	padding:0;
+	border:none;
+	outline:0px solid blue;
+	display:inline-block;
+}
+
+
+#button1{
+	position: absolute;
+	top: 35%;
+	right:1%;
+	cursor:pointer;
+}
+
+#button2{
+	position: absolute;
+	top:44%;
+	right:1%;
+	cursor:pointer;
+}
+
 #button3{
 	position: absolute;
-	bottom: 19%;	left:35%;
+	bottom: 19%;
+	left:35%;
 	cursor:pointer;
 }
 
 #button4{
 	position: absolute;
-	bottom:19%;left:77%;
+	bottom:19%;
+	left:77%;
 	cursor:pointer;
 }
+
 #button5{
 	position: absolute;
 	bottom:84%;
