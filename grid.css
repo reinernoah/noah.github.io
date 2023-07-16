@@ -4,6 +4,7 @@
   max-width: 960px;
   padding: 20px;
   box-sizing: border-box;
+  background-color: black;
 }
 
 .responsive-image {
