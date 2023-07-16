@@ -129,17 +129,32 @@ body {
     height: auto;
   }
 
-  #button1,
-  #button2,
-  #button3,
-  #button4,
-  #button5 {
+
+  #button1 {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 20%;
+    right: 20%;
     cursor: pointer;
-    width: 10%;
-    height: auto;
-    max-width: 30%;
+  }
+
+  #button2 {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    cursor: pointer;
+  }
+
+  #button3 {
+    position: absolute;
+    bottom: 40%;
+    left: 20%;
+    cursor: pointer;
+  }
+
+  #button4 {
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+    cursor: pointer;
   }
 }
