@@ -122,14 +122,14 @@ body {
 
 #button1 {
   position: absolute;
-  top: 35%;
+  bottom: 30px;
   right: 1%;
   cursor: pointer;
 }
 
 #button2 {
   position: absolute;
-  top: 44%;
+  bottom: 60px;
   right: 1%;
   cursor: pointer;
 }
