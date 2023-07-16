@@ -87,12 +87,16 @@ body {
     max-width: 100%;
     padding: 20px;
   }
-
+  #video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
   #video {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: auto;
     z-index: -1;
   }
@@ -103,6 +107,8 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
+    max-width: 80%;
+    height: auto;
   }
 
   #button1,
@@ -110,11 +116,12 @@ body {
   #button3,
   #button4,
   #button5 {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-    margin: 10px auto;
-    width: 40%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    width: 10%;
+    height: auto;
+    max-width: 30%;
   }
 }
