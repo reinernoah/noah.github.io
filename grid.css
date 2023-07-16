@@ -45,10 +45,16 @@
 }
 
 #hand {
-  position: relative;
+  position: absolute;
+  height: 60%;
   width: 100%;
-  margin: 0 auto;
-  text-align: center;
+  top: 0;
+  left: auto; /* Remove left: 0; */
+  right: 0;
+  margin-right: -65%;
+  padding-right: 15px; /* Add padding-right to adjust as needed */
+  overflow: hidden;
+  background-color: transparent;
 }
 
 
