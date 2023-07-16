@@ -16,7 +16,7 @@
 	height:60%;
 	width: 100%;
 	top: 0;
-	left: 65%;
+	left: calc(65% + 7%);;
 	right: 0;
 	margin-right: -65%;
 	padding-right: -15px;
