@@ -18,7 +18,7 @@
 	top: 0;
 	left: 65%;
 	right: 0;
-	margin-right: -65%;
+	margin-right: -65%; 
 	padding-right: -15px;
 	overflow: :0;
 	background-color: transparent;
@@ -124,5 +124,12 @@
 	position: absolute;
 	bottom:19%;
 	left:77%;
+	cursor:pointer;
+}
+
+#button5{
+	position: absolute;
+	bottom:84%;
+	left:90%;
 	cursor:pointer;
 }
