@@ -34,7 +34,7 @@ body {
   width: 50%;
   max-width: 40%;
   height: auto;
-  z-index: -1;
+  z-index: 0;
 }
 
 #video {
@@ -118,8 +118,16 @@ body {
     width: 100%;
     height: auto;
     overflow: hidden;
+    z-index:0;
   }
   #video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+  }
+   #load {
     top: 0;
     left: 0;
     width: 100%;
