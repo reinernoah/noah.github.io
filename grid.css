@@ -16,7 +16,7 @@
 	height:60%;
 	width: 100%;
 	top: 0;
-	left: calc(65% + 7%);;
+	left: 65%;
 	right: 0;
 	margin-right: -65%;
 	padding-right: -15px;
@@ -68,28 +68,49 @@
 	background-color: transparent;
 }
 
-#movies {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: transparent;
-    width: 100%;
-    height: auto;
+#movies{
+	position: absolute;
+	top: 0%;
+	right:0%;
+	left: 30%;
+	margin-left:50%;
+	background-color: transparent;
+}
+.grid {
+	position:absolute;
+	width:5%;
+	height:7%;
+	margin:0;
+	padding:0;
+	border:none;
+	outline:0px solid white;
+	display:inline-block;
 }
 
-#button1 {
-    position: absolute;
-    top: calc(45% + 7%);
-    right: 1%;
-    cursor: pointer;
+.grid2 {
+	position:absolute;
+	width:30%;
+	height:7%;
+	margin:0;
+	padding:0;
+	border:none;
+	outline:0px solid blue;
+	display:inline-block;
 }
 
-#button2 {
-    position: absolute;
-    top: calc(55% + 7%);
-    right: 1%;
-    cursor: pointer;
+
+#button1{
+	position: absolute;
+	top: 35%;
+	right:1%;
+	cursor:pointer;
+}
+
+#button2{
+	position: absolute;
+	top:44%;
+	right:1%;
+	cursor:pointer;
 }
 
 #button3{
@@ -112,53 +133,3 @@
 	left:90%;
 	cursor:pointer;
 }
-
-
-.grid {
-	position:absolute;
-	width:5%;
-	height:7%;
-	margin:0;
-	padding:0;
-	border:none;
-	outline:0px solid white;
-	display:inline-block;
-	z-index: 1;
-}
-
-.grid2 {
-	position:absolute;
-	width:30%;
-	height:7%;
-	margin:0;
-	padding:0;
-	border:none;
-	outline:0px solid blue;
-	display:inline-block;
-	z-index: 1;
-}
-
-/* New styles for video on mobile devices */
-@media (max-width: 767px) {
-    #video {
-        position: static;
-        background-position: center;
-        z-index: -1;
-        transform: none;
-    }
-
-    #movies {
-        position: static;
-        transform: none;
-    }
-
-    #button1,
-    #button2 {
-        position: static;
-        margin-top: 1rem;
-        margin-right: 1%;
-        width: 100%;
-    }
-}
-
-
