@@ -60,7 +60,6 @@ $(document).ready(function() {
     		else if (Count == 2){
     		video.src = "Jerry.mp4";
     		Count = Count + 1;
-            more();
     		}
     		else if (Count == 3){
     		video.src = "OJ.mp4";
@@ -87,7 +86,6 @@ $(document).ready(function() {
     		else if (Count == 2){
     		video.src = "Sergio.mp4";
     		Count = Count + 1;
-            more();
     		}
     		else if (Count == 3){
     		video.src = "OJ.mp4";
