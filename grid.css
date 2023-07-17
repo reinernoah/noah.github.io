@@ -28,8 +28,8 @@ body {
 
 #load {
   position: absolute;
-  top: 40%;
-  left: 42%;
+  top: 30%;
+  left: 48%;
   transform: translate(-50%, -50%);
   width: 50%;
   max-width: 40%;
@@ -39,13 +39,13 @@ body {
 
 #video {
   position: absolute;
-  top: 40%;
-  left: 42%;
+  top: 20%;
+  left: 44%;
   transform: translate(-50%, -50%);
   width: 30%;
   max-width: 100%;
   height: auto;
-  z-index: 0;
+  z-index: -1;
 }
 
 #cv,
