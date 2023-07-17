@@ -134,20 +134,17 @@ body {
   justify-content: center;
 }
 
-
 /* Media queries for responsiveness */
 @media (max-width: 767px) {
   .container {
     max-width: 100%;
-    padding: 10px;
-    overflow: hidden;
-    overscroll-behavior: none;
+    padding: 20px;
     z-index: 0;
     transform: scale(2.5);
   }
   #video-container {
     position: relative;
-    top: 20%;
+    top: 10%;
     left: 15%;
     width: 100%;
     height: auto;
@@ -155,7 +152,7 @@ body {
     transform: scale(2.5);
   }
   #video {
-    top: 20%;
+    top: 10%;
     left: 15%;
     width: 100%;
     height: auto;
@@ -163,15 +160,14 @@ body {
     z-index: -1;
   }
    #load {
-    top: 0;
-    left: 0;
+    top: 10%;
+    left: 15%;
     width: 100%;
     height: auto;
     transform: scale(2.5);
     z-index: 1;
   }
 
-  #cv,
   #mail {
     bottom: 30px;
     left: 50%;
@@ -186,7 +182,7 @@ body {
   #button1 {
     position: absolute;
     top: 20%;
-    right: 12%;
+    right: 20%;
     transform: scale(2.5);
     cursor: pointer;
   }
@@ -194,24 +190,23 @@ body {
   #button2 {
     position: absolute;
     top: 40%;
-    right: 12%;
+    right: 20%;
     transform: scale(2.5);
     cursor: pointer;
   }
-
-  #button3 {
-    position: absolute;
-    bottom: 40%;
-    left: 20%;
-    transform: scale(2.5);
-    cursor: pointer;
-  }
-
+  
   #button4 {
     position: absolute;
     bottom: 40%;
     left: 40%;
     transform: scale(2.5);
     cursor: pointer;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow: hidden;
+    overscroll-behavior: none;
   }
 }
