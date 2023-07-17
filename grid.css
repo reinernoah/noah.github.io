@@ -97,7 +97,7 @@ body {
 
   #button2 {
     position: absolute;
-    top: 250px;
+    top: 300px;
     right:370px;
     cursor: pointer;
     width: 40px; /* Adjust the width as needed */
@@ -107,7 +107,7 @@ body {
 
   #button3 {
     position: absolute;
-    top: 450px;
+    top: 300px;
     left: 200px;
     cursor: pointer;
     width: 500px; /* Adjust the width as needed */
