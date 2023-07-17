@@ -55,24 +55,18 @@ body {
   z-index: -1;
 }
 
-  #cv{
-    bottom: 500px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 30%;
-    max-width: 80%;
-    height: auto;
-  }
-
-
-  #mail {
-    bottom: 500px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 30%;
-    max-width: 80%;
-    height: auto;
-  }
+#cv {
+    position: absolute;
+    top: 10%;
+    left: 60px;
+    cursor: pointer;
+}
+#mail {
+    position: absolute;
+    top: 10%;
+    right: 180px;
+    cursor: pointer;
+}
 
 #hand {
   position: absolute;
@@ -88,8 +82,8 @@ body {
 
  #button1 {
     position: absolute;
-    top: 200px;
-    right: 320px;
+    top: 20%;
+    right: 30%px;
     cursor: pointer;
     width: 40px; /* Adjust the width as needed */
     height: 40px; /* Adjust the height as needed */
@@ -99,8 +93,8 @@ body {
 
   #button2 {
     position: absolute;
-    top: 250px;
-    right:320px;
+    top: 25%;
+    right:30%;
     cursor: pointer;
     width: 40px; /* Adjust the width as needed */
     height: 40px; /* Adjust the height as needed */
@@ -109,7 +103,7 @@ body {
 
   #button3 {
     position: absolute;
-    top: 300px;
+    top: 450px;
     left: 200px;
     cursor: pointer;
     width: 500px; /* Adjust the width as needed */
