@@ -14,6 +14,8 @@ body {
 
 .responsive-image {
   display: block;
+  top: 10%;
+  right: 48%;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
@@ -21,9 +23,12 @@ body {
 
 .responsive-video {
   display: block;
+  top: 10%;
+  right: 48%;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+  z-index: -1;
 }
 
 #load {
