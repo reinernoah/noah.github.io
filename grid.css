@@ -138,7 +138,11 @@
 
 }
 /* Media queries for responsiveness */
-@media (max-width: 767px) {
+@media (max-width: 767px), (min-width: 767px) {
+  video[poster],
+  video {
+    display: none;
+  }
   .container {
     max-width: 100%;
     padding: 20px;
@@ -204,6 +208,28 @@
     left: 40%;
     transform: scale(2.5);
     cursor: pointer;
+  }
+}
+
+  video[poster],
+  video {
+    display: none;
+  }
+
+  img.responsive-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  /* Prevent video from expanding to full screen */
+  #loading,
+  #content,
+  #resume,
+  #gmail,
+  #movies,
+  #control {
+    max-width: 100%;
+    height: auto;
   }
 }
 
