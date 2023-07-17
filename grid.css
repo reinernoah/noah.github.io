@@ -28,13 +28,12 @@ body {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  z-index: -1;
 }
 
 #load {
   position: absolute;
-  top: 10%;
-  right: 48%;
+  top: 20%;
+  right: 8%;
   transform: translate(-50%, -50%);
   width: 50%;
   max-width: 40%;
@@ -44,8 +43,8 @@ body {
 
 #video {
   position: absolute;
-  top: 5%;
-  left: 44%;
+  top: 15%;
+  left: 46%;
   transform: translate(-50%, -50%);
   width: 30%;
   max-width: 100%;
@@ -77,8 +76,8 @@ body {
 
  #button1 {
     position: absolute;
-    top: 40px;
-    right: 20px;
+    top: 45px;
+    right: 100px;
     cursor: pointer;
     width: 40px; /* Adjust the width as needed */
     height: 40px; /* Adjust the height as needed */
@@ -86,8 +85,8 @@ body {
 
   #button2 {
     position: absolute;
-    top: 60px;
-    right: 20px;
+    top: 80px;
+    right:100px;
     cursor: pointer;
     width: 40px; /* Adjust the width as needed */
     height: 40px; /* Adjust the height as needed */
@@ -95,7 +94,7 @@ body {
 
   #button3 {
     position: absolute;
-    bottom: 90px;
+    top: 500px;
     left: 20px;
     cursor: pointer;
     width: 100px; /* Adjust the width as needed */
@@ -104,8 +103,8 @@ body {
 
   #button4 {
     position: absolute;
-    top: 90px;
-    right: 20px;
+    top: 500px;
+    right: 100px;
     cursor: pointer;
     width: 100px; /* Adjust the width as needed */
     height: 40px; /* Adjust the height as needed */
