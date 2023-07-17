@@ -23,8 +23,8 @@ body {
 
 .responsive-video {
   display: block;
-  top: 10%;
-  right: 48%;
+  top: 15%;
+  right: 49%;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
@@ -46,20 +46,27 @@ body {
   top: 15%;
   left: 46%;
   transform: translate(-50%, -50%);
-  width: 30%;
+  width: 32%;
   max-width: 100%;
   height: auto;
   z-index: -1;
 }
 
-#cv,
+#cv {
+    position: absolute;
+    top: 450px;
+    left: 60px;
+    cursor: pointer;
+    width: 100px; /* Adjust the width as needed */
+    height
+}
 #mail {
-  position: absolute;
-  bottom: 20px;
-  left: 35%;
-  cursor: pointer;
-  width: 30%;
-  height: auto;
+    position: absolute;
+    top: 450px;
+    right: 180px;
+    cursor: pointer;
+    width: 100px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
 }
 
 #hand {
@@ -94,8 +101,8 @@ body {
 
   #button3 {
     position: absolute;
-    top: 500px;
-    left: 20px;
+    top: 450px;
+    left: 60px;
     cursor: pointer;
     width: 100px; /* Adjust the width as needed */
     height: 40px; /* Adjust the height as needed */
@@ -103,8 +110,8 @@ body {
 
   #button4 {
     position: absolute;
-    top: 500px;
-    right: 100px;
+    top: 450px;
+    right: 180px;
     cursor: pointer;
     width: 100px; /* Adjust the width as needed */
     height: 40px; /* Adjust the height as needed */
