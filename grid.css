@@ -84,19 +84,22 @@ body {
  #button1 {
     position: absolute;
     top: 200px;
-    right: 500px;
+    right: 450px;
     cursor: pointer;
     width: 40px; /* Adjust the width as needed */
     height: 40px; /* Adjust the height as needed */
+    z-index: 2;
+    
   }
 
   #button2 {
     position: absolute;
     top: 250px;
-    right:100px;
+    right:450px;
     cursor: pointer;
     width: 40px; /* Adjust the width as needed */
     height: 40px; /* Adjust the height as needed */
+    z-index: 2;
   }
 
   #button3 {
@@ -106,6 +109,7 @@ body {
     cursor: pointer;
     width: 500px; /* Adjust the width as needed */
     height: 200px; /* Adjust the height as needed */
+    z-index: 2;
   }
 
   #button4 {
@@ -115,6 +119,7 @@ body {
     cursor: pointer;
     width: 500px; /* Adjust the width as needed */
     height: 200px; /* Adjust the height as needed */
+    z-index: 2;
   }
 
 
