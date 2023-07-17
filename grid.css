@@ -14,7 +14,7 @@ body {
 
 .responsive-image {
   display: block;
-  top: 10%;
+  top: 25%;
   right: 48%;
   max-width: 100%;
   height: auto;
@@ -23,7 +23,7 @@ body {
 
 .responsive-video {
   display: block;
-  top: 15%;
+  top: 25%;
   right: 49%;
   max-width: 100%;
   height: auto;
@@ -32,7 +32,7 @@ body {
 
 #load {
   position: absolute;
-  top: 20%;
+  top: 25%;
   right: 8%;
   transform: translate(-50%, -50%);
   width: 50%;
@@ -43,7 +43,7 @@ body {
 
 #video {
   position: absolute;
-  top: 15%;
+  top: 25%;
   left: 46%;
   transform: translate(-50%, -50%);
   width: 32%;
