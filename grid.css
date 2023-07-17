@@ -130,7 +130,7 @@ body {
 @media (max-width: 767px) {
   .container {
     max-width: 100%;
-    padding: 20px;
+    padding: 10px;
     overflow: hidden;
     overscroll-behavior: none;
     z-index: 0;
@@ -138,7 +138,7 @@ body {
   }
   #video-container {
     position: relative;
-    top: 10%;
+    top: 20%;
     left: 15%;
     width: 100%;
     height: auto;
@@ -146,7 +146,7 @@ body {
     transform: scale(2.5);
   }
   #video {
-    top: 10%;
+    top: 20%;
     left: 15%;
     width: 100%;
     height: auto;
@@ -177,7 +177,7 @@ body {
   #button1 {
     position: absolute;
     top: 20%;
-    right: 20%;
+    right: 12%;
     transform: scale(2.5);
     cursor: pointer;
   }
@@ -185,7 +185,7 @@ body {
   #button2 {
     position: absolute;
     top: 40%;
-    right: 20%;
+    right: 12%;
     transform: scale(2.5);
     cursor: pointer;
   }
