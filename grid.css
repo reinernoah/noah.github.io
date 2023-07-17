@@ -131,6 +131,8 @@ body {
   .container {
     max-width: 100%;
     padding: 20px;
+    overflow: hidden;
+    overscroll-behavior: none;
     z-index: 0;
     transform: scale(2.5);
   }
