@@ -1,5 +1,4 @@
-/* Desktop styles */
-@media (min-width: 768px) {
+
   .container {
     position: relative;
     margin: 0 auto;
@@ -136,7 +135,6 @@
     justify-content: center;
   }
 
-}
 
 /* Media queries for responsiveness */
 @media (max-width: 767px), (min-width: 767px) {
@@ -144,7 +142,7 @@
     max-width: 100%;
     padding: 20px;
     z-index: 0;
-    transform: scale(2.5);
+    transform: scale(2);
   }
   #video-container {
     position: relative;
@@ -153,22 +151,22 @@
     width: 320px; /* Set the desired fixed width for the video */
     height: 240px; /* Set the desired fixed height for the video */
     overflow: hidden;
-    transform: scale(2.5);
+    transform: scale(2);
   }
   #video {
     top: 10%;
     left: 15%;
     width: 320px; /* Set the desired fixed width for the video */
     height: 240px; /* Set the desired fixed height for the video */
-    transform: scale(2.5);
+    transform: scale(2);
     z-index: -1;
   }
    #load {
     top: 10%;
-    left: 15%;
+    left: 40%;
     width: 320px; /* Set the desired fixed width for the video */
     height: 240px; /* Set the desired fixed height for the video */
-    transform: scale(2.5);
+    transform: scale(2);
     z-index: 1;
   }
 
@@ -178,7 +176,7 @@
     transform: translateX(-50%);
     width: 90%;
     max-width: 80%;
-    transform: scale(2.5);
+    transform: scale(2);
     height: auto;
   }
 
@@ -187,7 +185,7 @@
     position: absolute;
     top: 20%;
     right: 20%;
-    transform: scale(2.5);
+    transform: scale(2);
     cursor: pointer;
   }
 
@@ -195,7 +193,7 @@
     position: absolute;
     top: 40%;
     right: 20%;
-    transform: scale(2.5);
+    transform: scale(2);
     cursor: pointer;
   }
   
@@ -203,7 +201,7 @@
     position: absolute;
     bottom: 40%;
     left: 40%;
-    transform: scale(2.5);
+    transform: scale(2);
     cursor: pointer;
   }
 }
