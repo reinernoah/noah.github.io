@@ -72,25 +72,25 @@ body {
 
  #button1 {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 40px;
+    right: 20px;
     cursor: pointer;
-    width: 100px; /* Adjust the width as needed */
+    width: 40px; /* Adjust the width as needed */
     height: 40px; /* Adjust the height as needed */
   }
 
   #button2 {
     position: absolute;
-    top: 40px;
-    left: 20px;
+    top: 60px;
+    right: 20px;
     cursor: pointer;
-    width: 100px; /* Adjust the width as needed */
+    width: 40px; /* Adjust the width as needed */
     height: 40px; /* Adjust the height as needed */
   }
 
   #button3 {
     position: absolute;
-    bottom: 40px;
+    bottom: 90px;
     left: 20px;
     cursor: pointer;
     width: 100px; /* Adjust the width as needed */
@@ -99,8 +99,8 @@ body {
 
   #button4 {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    top: 90px;
+    right: 20px;
     cursor: pointer;
     width: 100px; /* Adjust the width as needed */
     height: 40px; /* Adjust the height as needed */
