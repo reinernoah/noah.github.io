@@ -146,24 +146,24 @@ body {
     position: relative;
     top: 10%;
     left: 15%;
-    width: 100%;
-    height: auto;
+    width: 320px; /* Set the desired fixed width for the video */
+    height: 240px; /* Set the desired fixed height for the video */
     overflow: hidden;
     transform: scale(2.5);
   }
   #video {
     top: 10%;
     left: 15%;
-    width: 100%;
-    height: auto;
+    width: 320px; /* Set the desired fixed width for the video */
+    height: 240px; /* Set the desired fixed height for the video */
     transform: scale(2.5);
     z-index: -1;
   }
    #load {
     top: 10%;
     left: 15%;
-    width: 100%;
-    height: auto;
+    width: 320px; /* Set the desired fixed width for the video */
+    height: 240px; /* Set the desired fixed height for the video */
     transform: scale(2.5);
     z-index: 1;
   }
