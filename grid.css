@@ -161,13 +161,22 @@
     transform: scale(2);
     z-index: -1;
   }
+  
    #load {
     top: 10%;
     left: 40%;
     width: 320px; /* Set the desired fixed width for the video */
     height: 240px; /* Set the desired fixed height for the video */
-    transform: scale(2);
+    transform: scaleX(2);
     z-index: 1;
+
+
+  #load img {
+    transform: scaleX(-1);
+    }
+  #button1.clicked ~ #load img,
+  #button2.clicked ~ #load img {
+    display: none;
   }
 
   #mail {
