@@ -1,138 +1,143 @@
-.container {
-  position: relative;
-  margin: 0 auto;
-  top: 27%;
-  max-width: 960px;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: black;
-  z-index:1;
-  transform: scale(2);
-}
-
-body {
-  background-color: black;
-  overflow: hidden;
-}
-
-.responsive-image {
-  display: block;
-  top: 25%;
-  right: 48%;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.responsive-video {
-  display: block;
-  top: 25%;
-  right: 49%;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-#load {
-  position: absolute;
-  top: 48%;
-  left: 65%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  max-width: 40%;
-  height: auto;
-  z-index: 1;
-}
-
-#video {
-  position: absolute;
-  top: 49%;
-  left: 46%;
-  transform: translate(-50%, -50%);
-  width: 32%;
-  max-width: 100%;
-  height: auto;
-  z-index: -1;
-}
-
-#cv {
-    position: absolute;
-    top: 63%;
-    left: 25%;
-    cursor: pointer;
-    width:25%; /* Adjust the width as needed */
-    height: 15%; /* Adjust the height as needed */
-}
-#mail {
-    position: absolute;
-    top: 60%;
-    right: 25%;
-    cursor: pointer;
-    width: 25%; /* Adjust the width as needed */
-    height: 15%; /* Adjust the height as needed */
-    z-index: 2;
-}
-
-#hand {
-  position: absolute;
-  height: 60%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  margin-right: -65%;
-  padding-right: 15px;
-  overflow: hidden;
-  background-color: transparent;
-}
-
- #button1 {
-    position: absolute;
-    top: 39%;
-    right: 36%;
-    cursor: pointer;
-    width: 4%; /* Adjust the width as needed */
-    height: 4%; /* Adjust the height as needed */
-    transform: translate(50%, -50%);
-    z-index: 2;
-    
+/* Desktop styles */
+@media (min-width: 768px) {
+  .container {
+    position: relative;
+    margin: 0 auto;
+    top: 27%;
+    max-width: 960px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: black;
+    z-index:1;
+    transform: scale(2);
   }
-
-  #button2 {
+  
+  body {
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  .responsive-image {
+    display: block;
+    top: 25%;
+    right: 48%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .responsive-video {
+    display: block;
+    top: 25%;
+    right: 49%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  #load {
     position: absolute;
     top: 48%;
-    right: 36%;
-    cursor: pointer;
-    width: 4%; /* Adjust the width as needed */
-    height: 4%; /* Adjust the height as needed */
-    transform: translate(50%, -50%);
-    z-index: 2;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    max-width: 40%;
+    height: auto;
+    z-index: 1;
   }
-
-  #button3 {
+  
+  #video {
     position: absolute;
-    top: 70%;
-    left: 33%;
-    cursor: pointer;
-    width:11%; /* Adjust the width as needed */
-    height: 10%; /* Adjust the height as needed */
-    z-index: 2;
+    top: 49%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    width: 32%;
+    max-width: 100%;
+    height: auto;
+    z-index: -1;
   }
-
-  #button4 {
+  
+  #cv {
+      position: absolute;
+      top: 63%;
+      left: 25%;
+      cursor: pointer;
+      width:25%; /* Adjust the width as needed */
+      height: 15%; /* Adjust the height as needed */
+  }
+  #mail {
+      position: absolute;
+      top: 60%;
+      right: 25%;
+      cursor: pointer;
+      width: 25%; /* Adjust the width as needed */
+      height: 15%; /* Adjust the height as needed */
+      z-index: 2;
+  }
+  
+  #hand {
     position: absolute;
-    top: 73%;
-    right: 25%;
-    cursor: pointer;
-    width: 25%; /* Adjust the width as needed */
-    height: 6%; /* Adjust the height as needed */
-    z-index: 2;
+    height: 60%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    margin-right: -65%;
+    padding-right: 15px;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+   #button1 {
+      position: absolute;
+      top: 39%;
+      right: 36%;
+      cursor: pointer;
+      width: 4%; /* Adjust the width as needed */
+      height: 4%; /* Adjust the height as needed */
+      transform: translate(50%, -50%);
+      z-index: 2;
+      
+    }
+  
+    #button2 {
+      position: absolute;
+      top: 48%;
+      right: 36%;
+      cursor: pointer;
+      width: 4%; /* Adjust the width as needed */
+      height: 4%; /* Adjust the height as needed */
+      transform: translate(50%, -50%);
+      z-index: 2;
+    }
+  
+    #button3 {
+      position: absolute;
+      top: 70%;
+      left: 33%;
+      cursor: pointer;
+      width:11%; /* Adjust the width as needed */
+      height: 10%; /* Adjust the height as needed */
+      z-index: 2;
+    }
+  
+    #button4 {
+      position: absolute;
+      top: 73%;
+      right: 25%;
+      cursor: pointer;
+      width: 25%; /* Adjust the width as needed */
+      height: 6%; /* Adjust the height as needed */
+      z-index: 2;
+    }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
+
 
 /* Media queries for responsiveness */
 @media (max-width: 767px), (min-width: 767px) {
@@ -219,12 +224,8 @@ body {
     height: auto;
   }
   /* Prevent video from expanding to full screen */
-  #loading,
-  #content,
   #resume,
-  #gmail,
-  #movies,
-  #control {
+  #gmail {
     max-width: 100%;
     height: auto;
   }
