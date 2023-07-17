@@ -226,10 +226,3 @@
     height: auto;
   }
 }
-
-@media (max-width: 767px) {
-  body {
-    overflow: hidden;
-    overscroll-behavior: none;
-  }
-}
