@@ -174,8 +174,8 @@
     left: 40%;
     width: 4%; /* Set the desired fixed width for the video */
     height: 4%; /* Set the desired fixed height for the video */
-    transform: scaleX(-.5);
-    z-index: 1;
+    transform: scaleX(-1);
+    z-index: 2;
   }
 
   #load {
@@ -196,7 +196,7 @@
   #button1 {
     position: absolute;
     top: 20%;
-    right: 20%;
+    right: 22%;
     transform: scale(2);
     cursor: pointer;
   }
@@ -204,7 +204,7 @@
   #button2 {
     position: absolute;
     top: 40%;
-    right: 20%;
+    right: 22%;
     transform: scale(2);
     cursor: pointer;
   }
