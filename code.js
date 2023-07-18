@@ -36,6 +36,10 @@ function resume() {
   video.play();
 }
 
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  }
+  
 // Function to play the loading video
 function playLoadingVideo() {
   setTimeout(function() {
@@ -44,9 +48,18 @@ function playLoadingVideo() {
   }, 4200);
 }
 
-function isMobileDevice() {
-    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+
+function playMobileVideo() {
+  var isMobile = isMobileDevice();
+  if (isMobile) {
+    var video = document.getElementById('content');
+    video.src = "Reel.mp4";
+    video.autoplay = true;
+    video.play();
   }
+}
+
+
 
 // Function to adjust video size on window resize
 function adjustVideoSize() {
@@ -75,6 +88,8 @@ $(document).ready(function() {
       if (window.innerWidth <= 767) {
          $("#mobile-div").remove();
       } if (isMobile) {
+        video.src = "Loading1.gif";
+        video.play();
         video.src = "Reel.mp4";
         video.play();
       } if (Count == 0) {
@@ -106,6 +121,8 @@ $(document).ready(function() {
          $("#mobile-div").remove();
       }
       if (isMobile) {
+        video.src = "Loading1.gif";
+        video.play();
         video.src = "Reel.mp4";
         video.play();
       } if (Count == 0) {
