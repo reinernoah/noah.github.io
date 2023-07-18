@@ -138,12 +138,7 @@
     align-items: center;
     justify-content: center;
   }
-  body, .container, .responsive-image, .responsive-video {
-    max-width: none !important;
-    width: auto !important;
-    height: auto !important;
-    transform: none !important;
-  }
+}
 
 /* Media queries for responsiveness */
 @media (max-width: 767px){
@@ -219,9 +214,9 @@
     transform: scale(2);
     cursor: pointer;
   }
-}
-  /* Prevent video from expanding to full screen */
-  #resume,
+  #resume {
+display: none;
+  }
   #gmail {
     max-width: 100%;
     height: auto;
