@@ -3,7 +3,6 @@
     position: relative;
     margin: 0 auto;
     top: 27%;
-    max-width: 960px;
     padding: 20px;
     box-sizing: border-box;
     background-color: black;
@@ -132,65 +131,6 @@
       z-index: 2;
     }
 }
-
-/* Media queries for responsiveness */
-@media (max-width: 767px){
-  .container {
-    max-width: 100%;
-    top: 10%;
-    padding: 20px;
-    z-index: 0;
-    transform: scale(2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #video {
-    top: 10%;
-    left: 15%;
-    width: 320px; /* Set the desired fixed width for the video */
-    height: 240px; /* Set the desired fixed height for the video */
-    transform: scale(2);
-    z-index: -1;
-  }
-  
-  #load img {
-    transform: scaleX(-1);
-    }
-  #button1 {
-    position: absolute;
-    top: 20%;
-    right: 20%;
-    transform: scale(2);
-    cursor: pointer;
-    z-index:2;
-  }
-  #button2 {
-    position: absolute;
-    top: 40%;
-    right: 20%;
-    transform: scale(2);
-    cursor: pointer;
-    z-index:2;
-  }
-  
-  #button4 {
-    position: absolute;
-    bottom: 40%;
-    left: 40%;
-    transform: scale(2);
-    cursor: pointer;
-  }
-  img.responsive-image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  #resume, #mail {
-    display:none
-  }
-}
-
 
 @media (max-width: 767px), (max-device-width: 767px)
     body {
