@@ -225,11 +225,6 @@
     cursor: pointer;
   }
 }
-  img.responsive-image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
   /* Prevent video from expanding to full screen */
   #resume,
   #gmail {
@@ -237,10 +232,3 @@
     height: auto;
   }
 }
-
-
-@media (max-width: 767px), (max-device-width: 767px)
-    body {
-    overflow: hidden;
-    overscroll-behavior: none;
-  }
