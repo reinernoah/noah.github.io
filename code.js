@@ -31,10 +31,11 @@ function stopVid() {
     var video = document.getElementById('mobile-div');
     video.play()
   }
+  else {
   var media = document.getElementById('loading');
   media.pause();
   media.currentTime = -750;
-}
+}}
 
 function email() {
   var video = document.getElementById('gmail');
