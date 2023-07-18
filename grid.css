@@ -57,7 +57,7 @@
     top: 49%;
     left: 46%;
     transform: translate(-50%, -50%);
-    width: 32%;
+    width: 30%;
     max-width: 100%;
     height: auto;
     z-index: -1;
@@ -141,11 +141,12 @@
     }
 
 }
+
 /* Media queries for responsiveness */
 @media (max-width: 767px){
   .container {
     max-width: 100%;
-    top: 10%;
+    top: 50%;
     padding: 20px;
     z-index: 0;
     transform: scale(2);
@@ -174,7 +175,7 @@
     width: 4%; /* Set the desired fixed width for the video */
     height: 4%; /* Set the desired fixed height for the video */
     transform: scaleX(-.5);
-    z-index: 2;
+    z-index: 1;
   }
 
   #load {
