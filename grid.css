@@ -169,7 +169,7 @@
     width: 320px; /* Set the desired fixed width for the video */
     height: 240px; /* Set the desired fixed height for the video */
     transform: scaleX(2);
-    z-index: 1;
+    z-index: 0;
   }
   #load img {
     transform: scaleX(-1);
