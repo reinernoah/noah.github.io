@@ -2,18 +2,25 @@
   .container {
     position: relative;
     margin: 0 auto;
-    top: 27%;
     max-width: 960px;
-    padding: 20px;
+    padding: 40px;
     box-sizing: border-box;
     background-color: black;
     z-index:1;
+    top:200px;
     transform: scale(2);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
   
+
   body {
     background-color: black;
     overflow: hidden;
+
   }
   
   .responsive-image {
@@ -132,14 +139,8 @@
       height: 6%; /* Adjust the height as needed */
       z-index: 2;
     }
-  
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
 
+}
 /* Media queries for responsiveness */
 @media (max-width: 767px){
   .container {
