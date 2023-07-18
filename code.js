@@ -4,11 +4,6 @@ setTimeout(function() {
   document.getElementById("loading").play();
 }, 4200);
 
-setTimeout(function() {
-  var image = document.getElementById("black");
-  image.src = "Glitch.gif";
-}, 4100);
-
 // Disable mute
 function disableMute() {
   var video = document.getElementById('content');
