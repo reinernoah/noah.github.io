@@ -1,5 +1,4 @@
 var Count = 0;
-
 setTimeout(function() {
   document.getElementById("loading").play();
 }, 3900);
@@ -15,38 +14,26 @@ function disableMute() {
   var video = document.getElementById('content');
   video.muted = false;
 }
-
 function playVid() {
   var vid = document.getElementById('control');
   vid.play();
 }
-
-function isMobileDevice() {
-    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-  }
-
 function stopVid() {
-  var isMobile = isMobileDevice();
-  if (isMobile) {
-    var video = document.getElementById('mobile-div');
-    video.play()
-  }
-  else {
   var media = document.getElementById('loading');
   media.pause();
   media.currentTime = -750;
-}}
-
+}
 function email() {
   var video = document.getElementById('gmail');
   video.play();
 }
-
 function resume() {
   var video = document.getElementById('resume');
   video.play();
 }
-
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  }
   
 // Function to play the loading video
 function playLoadingVideo() {
@@ -55,24 +42,25 @@ function playLoadingVideo() {
     loadingVideo.play();
   }, 4200);
 }
-
-
-
+function playMobileVideo() {
+  var isMobile = isMobileDevice();
+  if (isMobile) {
+    var video = document.getElementById('content');
+    video.src = "Reel.mp4";
+    video.autoplay = true;
+    video.play();
+  }
+}
 // Function to adjust video size on window resize
 function adjustVideoSize() {
   var video = document.getElementById('video');
   var container = document.getElementsByClassName('container')[0];
   var containerWidth = container.offsetWidth;
-
   // Adjust the video width relative to the container width
   var videoWidth = containerWidth * 0.32; // Adjust the percentage as needed
   video.style.width = videoWidth + 'px';
 }
-
 window.addEventListener('resize', adjustVideoSize);
-
-
-
 // Create a hover effect that changes the color of a square to black when the mouse passes over it, leaving a (pixel) trail through the grid
 // Allow the click of a button to prompt the user to create a new grid
 $(document).ready(function() {
@@ -107,7 +95,6 @@ $(document).ready(function() {
     }, 750);
     disableMute();
   });
-
   $("#button2").click(function() {
     stopVid();
     playVid();
