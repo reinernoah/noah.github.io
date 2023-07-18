@@ -88,7 +88,10 @@
     overflow: hidden;
     background-color: transparent;
   }
-  
+    
+  #mobile-div {
+  display: none;
+  }
    #button1 {
       position: absolute;
       top: 39%;
@@ -137,7 +140,7 @@
 @media (max-width: 767px){
   .container {
     max-width: 100%;
-    top: 29%;
+    top: 40%;
     padding: 20px;
     z-index: 0;
     transform: scale(2);
