@@ -2,27 +2,18 @@
   .container {
     position: relative;
     margin: 0 auto;
+    top: 27%;
+    max-width: 960px;
+    padding: 20px;
     box-sizing: border-box;
     background-color: black;
     z-index:1;
     transform: scale(2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
   }
 
-  
   body {
     background-color: black;
     overflow: hidden;
-    height: 60%;
-    width:100%;
-    right:10%;
-    margin-right: -65%;
-    padding-right: 15px;
-    overflow: hidden;
-    justify-content: center;
   }
   
   .responsive-image {
@@ -42,10 +33,10 @@
     height: auto;
     margin: 0 auto;
   }
-
+  
   #load {
     position: absolute;
-    top: 49%;
+    top: 48%;
     left: 65%;
     transform: translate(-50%, -50%);
     width: 50%;
@@ -59,8 +50,8 @@
     top: 49%;
     left: 46%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    max-width: 40%;
+    width: 32%;
+    max-width: 100%;
     height: auto;
     z-index: -1;
   }
@@ -82,19 +73,19 @@
       height: 15%; /* Adjust the height as needed */
       z-index: 2;
   }
-
+  
   #hand {
     position: absolute;
     height: 60%;
     width: 100%;
     top: 0;
-    right: 10%;
+    right: 0;
     margin-right: -65%;
     padding-right: 15px;
     overflow: hidden;
     background-color: transparent;
   }
-    
+  
    #button1 {
       position: absolute;
       top: 39%;
@@ -138,9 +129,16 @@
       z-index: 2;
     }
   
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
 
 /* Media queries for responsiveness */
-@media (max-width: 767px){
+@media (max-width: 767px), (min-width: 767px) {
   .container {
     max-width: 100%;
     top: 10%;
@@ -165,6 +163,30 @@
     transform: scale(2);
     z-index: -1;
   }
+  
+   #load {
+    top: 10%;
+    left: 40%;
+    width: 320px; /* Set the desired fixed width for the video */
+    height: 240px; /* Set the desired fixed height for the video */
+    transform: scaleX(2);
+    z-index: 1;
+  #load img {
+    transform: scaleX(-1);
+    }
+  #button1.clicked ~ #load img,
+  #button2.clicked ~ #load img {
+    display: none;
+  }
+  #mail {
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 80%;
+    transform: scale(2);
+    height: auto;
+  }
   #button1 {
     position: absolute;
     top: 20%;
@@ -187,13 +209,22 @@
     transform: scale(2);
     cursor: pointer;
   }
-
-  #resume, #mail, #button3, #load {
-    display: none;
+}
+  img.responsive-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  /* Prevent video from expanding to full screen */
+  #resume,
+  #gmail {
+    max-width: 100%;
+    height: auto;
   }
 }
 
-  @media (max-width: 767px), (max-device-width: 767px)
+
+@media (max-width: 767px), (max-device-width: 767px)
     body {
     overflow: hidden;
     overscroll-behavior: none;
