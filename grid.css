@@ -138,7 +138,12 @@
     align-items: center;
     justify-content: center;
   }
-
+  body, .container, .responsive-image, .responsive-video {
+    max-width: none !important;
+    width: auto !important;
+    height: auto !important;
+    transform: none !important;
+  }
 }
 
 /* Media queries for responsiveness */
