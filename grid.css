@@ -2,7 +2,6 @@
   .container {
     position: relative;
     margin: 0 auto;
-    padding: 20px;
     box-sizing: border-box;
     background-color: black;
     z-index:1;
@@ -17,6 +16,13 @@
   body {
     background-color: black;
     overflow: hidden;
+    height: 60%;
+    width:100%;
+    right:10%;
+    margin-right: -65%;
+    padding-right: 15px;
+    overflow: hidden;
+    justify-content: center;
   }
   
   .responsive-image {
@@ -89,9 +95,6 @@
     background-color: transparent;
   }
     
-  #mobile-div {
-  display: none;
-  }
    #button1 {
       position: absolute;
       top: 39%;
@@ -140,7 +143,7 @@
 @media (max-width: 767px){
   .container {
     max-width: 100%;
-    top: 40%;
+    top: 10%;
     padding: 20px;
     z-index: 0;
     transform: scale(2);
@@ -162,22 +165,11 @@
     transform: scale(2);
     z-index: -1;
   }
+
   
-  #mobile-div {
-    top: 10%;
-    left: 40%;
-    width: 320px; /* Set the desired fixed width for the video */
-    height: 240px; /* Set the desired fixed height for the video */
-    transform: scaleX(2);
-    z-index: 0;
-  }
   #load img {
-    transform: scaleX(-1);
     }
-  #button1.clicked ~ #load img,
-  #button2.clicked ~ #load img {
-    display: none;
-  }
+
   #mail {
     bottom: 30px;
     left: 50%;
@@ -209,11 +201,14 @@
     transform: scale(2);
     cursor: pointer;
   }
-}
-  /* Prevent video from expanding to full screen */
-  #resume,
-  #gmail {
-    max-width: 100%;
-    height: auto;
+
+  #resume, #gmail, #button3 {
+    display: none;
   }
 }
+
+@media (max-width: 767px), (max-device-width: 767px)
+    body {
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
