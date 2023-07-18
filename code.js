@@ -62,20 +62,7 @@ function adjustVideoSize() {
 window.addEventListener('resize', adjustVideoSize);
 
 
-$(document).ready(function() {
-  $("#button1").click(function() {
-    // Remove the mobile div on Button 2 click
-    if (window.innerWidth <= 767) {
-      $("#mobile-div").remove();
-    }
 
-$(document).ready(function() {
-  $("#button2").click(function() {
-    // Remove the mobile div on Button 2 click
-    if (window.innerWidth <= 767) {
-      $("#mobile-div").remove();
-    }
-    
 // Create a hover effect that changes the color of a square to black when the mouse passes over it, leaving a (pixel) trail through the grid
 // Allow the click of a button to prompt the user to create a new grid
 $(document).ready(function() {
@@ -85,11 +72,12 @@ $(document).ready(function() {
     var video = document.getElementById('content');
     var isMobile = isMobileDevice();
     setTimeout(function() {
-      if (isMobile) {
-        var video = document.getElementById('content');
+      if (window.innerWidth <= 767) {
+         $("#mobile-div").remove();
+      } if (isMobile) {
         video.src = "Reel.mp4";
         video.play();
-      if (Count == 0) {
+      } if (Count == 0) {
         video.src = "Stranger.mp4";
         Count = Count + 1;
       } else if (Count == 1) {
@@ -114,12 +102,14 @@ $(document).ready(function() {
     var video = document.getElementById('content');
     var isMobile = isMobileDevice();
     setTimeout(function() {
+      if (window.innerWidth <= 767) {
+         $("#mobile-div").remove();
+      }
       if (isMobile) {
-        var video = document.getElementById('content');
         video.src = "Reel.mp4";
         video.play();
-      if (Count == 0) {
-        video.src = "strange.mp4";
+      } if (Count == 0) {
+        video.src = "Stranger.mp4";
         Count = Count + 1;
       } else if (Count == 1) {
         video.src = "Kla.mp4";
