@@ -2,7 +2,7 @@ var Count = 0;
 
 setTimeout(function() {
   document.getElementById("loading").play();
-}, 4200);
+}, 3900);
 
 // Disable mute
 function disableMute() {
