@@ -57,6 +57,21 @@ function adjustVideoSize() {
 
 window.addEventListener('resize', adjustVideoSize);
 
+
+$(document).ready(function() {
+  $("#button1").click(function() {
+    // Remove the mobile div on Button 2 click
+    if (window.innerWidth <= 767) {
+      $("#mobile-div").remove();
+    }
+
+$(document).ready(function() {
+  $("#button2").click(function() {
+    // Remove the mobile div on Button 2 click
+    if (window.innerWidth <= 767) {
+      $("#mobile-div").remove();
+    }
+    
 // Create a hover effect that changes the color of a square to black when the mouse passes over it, leaving a (pixel) trail through the grid
 // Allow the click of a button to prompt the user to create a new grid
 $(document).ready(function() {
