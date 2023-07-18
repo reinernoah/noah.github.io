@@ -59,8 +59,8 @@
     top: 49%;
     left: 46%;
     transform: translate(-50%, -50%);
-    width: 32%;
-    max-width: 100%;
+    width: 50%;
+    max-width: 40%;
     height: auto;
     z-index: -1;
   }
@@ -167,17 +167,12 @@
   }
 
   
-  #load img {
-    }
-
-  #mail {
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 80%;
-    transform: scale(2);
-    height: auto;
+  #load   {  
+    top: 10%;
+    right: 15%;
+    width: 320px; /* Set the desired fixed width for the video */
+    height: 240px; /* Set the desired fixed height for the video */
+    z-index: 0;
   }
   #button1 {
     position: absolute;
@@ -202,7 +197,7 @@
     cursor: pointer;
   }
 
-  #resume, #gmail, #button3 {
+  #resume, #mail, #button3 {
     display: none;
   }
 }
