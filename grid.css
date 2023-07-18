@@ -132,8 +132,75 @@
     }
 }
 
-@media (max-width: 767px), (max-device-width: 767px)
-    body {
-    overflow: hidden;
-    overscroll-behavior: none;
+
+@media (max-width: 767px), (max-device-width: 767px) {
+.container {
+    position: relative;
+    margin: 0 auto;
+    top: 27%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: black;
+    z-index:1;
+    transform: scale(2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
+  body {
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  .responsive-image {
+    display: block;
+    top: 25%;
+    right: 48%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .responsive-video {
+    display: block;
+    top: 25%;
+    right: 49%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+    #video {
+    position: absolute;
+    top: 49%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    width: 32%;
+    max-width: 100%;
+    height: auto;
+    z-index: -1;
+  }
+     #button1 {
+      position: absolute;
+      top: 39%;
+      right: 36%;
+      cursor: pointer;
+      width: 4%; /* Adjust the width as needed */
+      height: 4%; /* Adjust the height as needed */
+      transform: translate(50%, -50%);
+      z-index: 2;
+      
+    }
+  
+    #button2 {
+      position: absolute;
+      top: 48%;
+      right: 36%;
+      cursor: pointer;
+      width: 4%; /* Adjust the width as needed */
+      height: 4%; /* Adjust the height as needed */
+      transform: translate(50%, -50%);
+      z-index: 2;
+    }
+}
