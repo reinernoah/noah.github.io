@@ -73,6 +73,10 @@
       height: 15%; /* Adjust the height as needed */
       z-index: 2;
   }
+
+  #mobile-div {
+    display: none;
+  }
   
   #hand {
     position: absolute;
@@ -164,14 +168,14 @@
     z-index: -1;
   }
   
-   #load {
+  #mobile-div {
     top: 10%;
     left: 40%;
     width: 320px; /* Set the desired fixed width for the video */
     height: 240px; /* Set the desired fixed height for the video */
     transform: scaleX(2);
     z-index: 1;
-
+  }
 
   #load img {
     transform: scaleX(-1);
