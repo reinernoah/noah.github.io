@@ -9,6 +9,9 @@
     background-color: black;
     z-index:1;
     transform: scale(2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   body {
@@ -128,32 +131,19 @@
       height: 6%; /* Adjust the height as needed */
       z-index: 2;
     }
-  
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
 }
 
 /* Media queries for responsiveness */
-@media (max-width: 767px), (min-width: 767px) {
+@media (max-width: 767px){
   .container {
     max-width: 100%;
     top: 10%;
     padding: 20px;
     z-index: 0;
     transform: scale(2);
-  }
-  #video-container {
-    position: relative;
-    top: 10%;
-    left: 15%;
-    width: 320px; /* Set the desired fixed width for the video */
-    height: 240px; /* Set the desired fixed height for the video */
-    overflow: hidden;
-    transform: scale(2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   #video {
     top: 10%;
@@ -164,35 +154,16 @@
     z-index: -1;
   }
   
-   #load {
-    top: 10%;
-    left: 40%;
-    width: 320px; /* Set the desired fixed width for the video */
-    height: 240px; /* Set the desired fixed height for the video */
-    transform: scaleX(2);
-    z-index: 1;
   #load img {
     transform: scaleX(-1);
     }
-  #button1.clicked ~ #load img,
-  #button2.clicked ~ #load img {
-    display: none;
-  }
-  #mail {
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 80%;
-    transform: scale(2);
-    height: auto;
-  }
   #button1 {
     position: absolute;
     top: 20%;
     right: 20%;
     transform: scale(2);
     cursor: pointer;
+    z-index:2;
   }
   #button2 {
     position: absolute;
@@ -200,6 +171,7 @@
     right: 20%;
     transform: scale(2);
     cursor: pointer;
+    z-index:2;
   }
   
   #button4 {
@@ -209,17 +181,13 @@
     transform: scale(2);
     cursor: pointer;
   }
-}
   img.responsive-image {
     display: block;
     width: 100%;
     height: auto;
   }
-  /* Prevent video from expanding to full screen */
-  #resume,
-  #gmail {
-    max-width: 100%;
-    height: auto;
+  #resume, #mail {
+    display:none
   }
 }
 
