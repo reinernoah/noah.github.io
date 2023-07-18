@@ -1,4 +1,4 @@
-/* Desktop styles */
+@media (min-width: 768px) {
   .container {
     position: relative;
     margin: 0 auto;
@@ -8,6 +8,7 @@
     box-sizing: border-box;
     background-color: black;
     z-index:1;
+    transform: scale(2);
   }
   
   body {
@@ -78,7 +79,7 @@
     height: 60%;
     width: 100%;
     top: 0;
-    right: 0;
+    right: 10%;
     margin-right: -65%;
     padding-right: 15px;
     overflow: hidden;
@@ -134,8 +135,10 @@
     justify-content: center;
   }
 
+}
+
 /* Media queries for responsiveness */
-@media (max-width: 767px), (min-width: 767px) {
+@media (max-width: 767px){
   .container {
     max-width: 100%;
     top: 10%;
