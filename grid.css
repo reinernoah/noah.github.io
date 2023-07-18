@@ -136,7 +136,7 @@
 @media (max-width: 767px){
   .container {
     max-width: 100%;
-    top: 10%;
+    top: 29%;
     padding: 20px;
     z-index: 0;
     transform: scale(2);
