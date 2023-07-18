@@ -55,6 +55,10 @@
     height: auto;
     z-index: -1;
   }
+
+  #mobile-div {
+    display: none;
+  }
   
   #cv {
       position: absolute;
@@ -171,17 +175,13 @@
   #mobile-div {
     top: 10%;
     left: 40%;
-    width: 320px; /* Set the desired fixed width for the video */
-    height: 240px; /* Set the desired fixed height for the video */
-    transform: scaleX(2);
+    width: 4%; /* Set the desired fixed width for the video */
+    height: 4%; /* Set the desired fixed height for the video */
+    transform: scaleX(-.5);
     z-index: 1;
   }
 
-  #load img {
-    transform: scaleX(-1);
-    }
-  #button1.clicked ~ #load img,
-  #button2.clicked ~ #load img {
+  #load {
     display: none;
   }
 
