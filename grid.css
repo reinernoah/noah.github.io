@@ -1,3 +1,4 @@
+@media (min-width: 768px) {
   .container {
     position: relative;
     margin: 0 auto;
@@ -35,7 +36,7 @@
   
   #load {
     position: absolute;
-    top: 47%;
+    top: 48%;
     left: 65%;
     transform: translate(-50%, -50%);
     width: 50%;
@@ -71,10 +72,6 @@
       width: 25%; /* Adjust the width as needed */
       height: 15%; /* Adjust the height as needed */
       z-index: 2;
-  }
-
-  #mobile-div {
-    display: none;
   }
   
   #hand {
