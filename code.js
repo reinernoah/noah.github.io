@@ -44,6 +44,30 @@ function playLoadingVideo() {
   }, 4200);
 }
 
+$(document).ready(function() {
+  // Check if the device is a mobile device
+  function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  }
+  // Function to play the video immediately on mobile
+  function playMobileVideo() {
+    var isMobile = isMobileDevice();
+    if (isMobile) {
+      var video = document.getElementById('content');
+      video.src = "Reel.mp4";
+      video.play();
+    }
+  }
+
+  // Call the playMobileVideo function on document ready
+  playMobileVideo();
+  email();
+});
+  
+
+
+
+
 // Function to adjust video size on window resize
 function adjustVideoSize() {
   var video = document.getElementById('video');
