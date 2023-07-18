@@ -1,5 +1,4 @@
 /* Desktop styles */
-@media (min-width: 768px) {
   .container {
     position: relative;
     margin: 0 auto;
@@ -9,7 +8,6 @@
     box-sizing: border-box;
     background-color: black;
     z-index:1;
-    transform: scale(2);
   }
   
   body {
@@ -135,8 +133,6 @@
     align-items: center;
     justify-content: center;
   }
-
-}
 
 /* Media queries for responsiveness */
 @media (max-width: 767px), (min-width: 767px) {
