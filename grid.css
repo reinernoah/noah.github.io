@@ -3,6 +3,7 @@
     position: relative;
     margin: 0 auto;
     padding: 40px;
+    max-width: 100%;
     box-sizing: border-box;
     background-color: black;
     z-index:1;
