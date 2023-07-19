@@ -138,6 +138,10 @@
       height: 6%; /* Adjust the height as needed */
       z-index: 2;
     }
+   
+    #mobile-div {
+      display: none
+    }
 
 }
 
@@ -174,6 +178,10 @@
     bottom: 0%;
     max-width: 20%;
   }
+    #mobile-div {
+    bottom: 0%;
+    max-width: 20%;
+    }
 
   #button1 {
     position: absolute;
