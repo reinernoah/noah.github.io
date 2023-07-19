@@ -169,10 +169,8 @@
   
   .responsive-image-mobile {
     display: block;
-    top: 10%;
+    bottom: 0%;
     left: 40%;
-    width: 100px; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
   }
 
   #button1 {
