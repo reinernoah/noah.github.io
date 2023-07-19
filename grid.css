@@ -2,20 +2,25 @@
   .container {
     position: relative;
     margin: 0 auto;
-    top: 27%;
-    padding: 20px;
+    max-width: 960px;
+    padding: 40px;
     box-sizing: border-box;
     background-color: black;
     z-index:1;
+    top:200px;
     transform: scale(2);
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    
   }
+  
 
   body {
     background-color: black;
     overflow: hidden;
+
   }
   
   .responsive-image {
@@ -38,7 +43,7 @@
   
   #load {
     position: absolute;
-    top: 48%;
+    top: 47%;
     left: 65%;
     transform: translate(-50%, -50%);
     width: 50%;
@@ -52,10 +57,14 @@
     top: 49%;
     left: 46%;
     transform: translate(-50%, -50%);
-    width: 32%;
+    width: 30%;
     max-width: 100%;
     height: auto;
     z-index: -1;
+  }
+
+  #mobile-div {
+    display: none;
   }
   
   #cv {
@@ -81,7 +90,7 @@
     height: 60%;
     width: 100%;
     top: 0;
-    right: 0;
+    right: 10%;
     margin-right: -65%;
     padding-right: 15px;
     overflow: hidden;
@@ -130,77 +139,84 @@
       height: 6%; /* Adjust the height as needed */
       z-index: 2;
     }
+
 }
 
-
-@media (max-width: 767px), (max-device-width: 767px) {
-.container {
-    position: relative;
-    margin: 0 auto;
-    top: 27%;
+/* Media queries for responsiveness */
+@media (max-width: 767px){
+  .container {
+    max-width: 100%;
+    top: 50%;
     padding: 20px;
-    box-sizing: border-box;
-    background-color: black;
-    z-index:1;
+    z-index: 0;
     transform: scale(2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
-
-  body {
-    background-color: black;
+  #video-container {
+    position: relative;
+    top: 10%;
+    left: 15%;
+    width: 320px; /* Set the desired fixed width for the video */
+    height: 240px; /* Set the desired fixed height for the video */
     overflow: hidden;
+    transform: scale(2);
   }
-  
-  .responsive-image {
-    display: block;
-    top: 25%;
-    right: 48%;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
-  
-  .responsive-video {
-    display: block;
-    top: 25%;
-    right: 49%;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
-
-    #video {
-    position: absolute;
-    top: 49%;
-    left: 46%;
-    transform: translate(-50%, -50%);
-    width: 32%;
-    max-width: 100%;
-    height: auto;
+  #video {
+    top: 10%;
+    left: 15%;
+    width: 320px; /* Set the desired fixed width for the video */
+    height: 240px; /* Set the desired fixed height for the video */
+    transform: scale(2);
     z-index: -1;
   }
-     #button1 {
-      position: absolute;
-      top: 39%;
-      right: 36%;
-      cursor: pointer;
-      width: 4%; /* Adjust the width as needed */
-      height: 4%; /* Adjust the height as needed */
-      transform: translate(50%, -50%);
-      z-index: 2;
-      
-    }
   
-    #button2 {
-      position: absolute;
-      top: 48%;
-      right: 36%;
-      cursor: pointer;
-      width: 4%; /* Adjust the width as needed */
-      height: 4%; /* Adjust the height as needed */
-      transform: translate(50%, -50%);
-      z-index: 2;
-    }
+  #mobile-div {
+    top: 10%;
+    left: 40%;
+    width: 4%; /* Set the desired fixed width for the video */
+    height: 4%; /* Set the desired fixed height for the video */
+    transform: scaleX(-.5);
+    z-index: 1;
+  }
+
+  #load {
+    display: none;
+  }
+
+  #mail {
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 80%;
+    transform: scale(2);
+    height: auto;
+  }
+
+
+  #button1 {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    transform: scale(2);
+    cursor: pointer;
+  }
+
+  #button2 {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    transform: scale(2);
+    cursor: pointer;
+  }
+  
+  #button4 {
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+    transform: scale(2);
+    cursor: pointer;
+  }
+  #resume, #gmail {
+display: none;
+  }
 }
