@@ -169,21 +169,13 @@
     transform: scaleX(-.5);
     z-index: 1;
   }
-
-  #load {
-    display: none;
+  .responsive-image-mobile {
+    display: block;
+    top: 10%;
+    left: 40%;
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
   }
-
-  #cv {
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 80%;
-    transform: scale(2);
-    height: auto;
-  }
-
 
   #button1 {
     position: absolute;
