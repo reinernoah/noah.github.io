@@ -31,7 +31,9 @@
     height: auto;
     margin: 0 auto;
   }
-  
+    .responsive-image-mobile {
+    display: none;
+  }
   .responsive-video {
     display: block;
     top: 25%;
