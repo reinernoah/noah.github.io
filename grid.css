@@ -170,7 +170,7 @@
   .responsive-image-mobile {
     display: block;
     bottom: 0%;
-    left: 15%;
+    transform: scale(0.4);
   }
 
   #button1 {
