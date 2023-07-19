@@ -1,19 +1,20 @@
 var Count = 0;
 
 setTimeout(function() {
-  var isMobile = isMobileDevice();
-  if (isMobile) {
-    var video = document.getElementById('mobile-div');
-    video.play();
-  } else {
     document.getElementById("loading").play();
-  }
-}, 3900);
+  }, 5000);
 
 setTimeout(function() {
   var image = document.getElementById("black");
   image.src = "Glitch.gif";
-}, 4100);
+}, 3000);
+
+setTimeout(function() {
+  var isMobile = isMobileDevice();
+  if (isMobile) {
+    var video = document.getElementById('mobile-div');
+    image.src = "Couch.png";}
+}, 0);
 
 // Disable mute
 function disableMute() {
@@ -46,14 +47,7 @@ function resume() {
   video.play();
 }
 
-  
-// Function to play the loading video
-function playLoadingVideo() {
-  setTimeout(function() {
-    var loadingVideo = document.getElementById("loading");
-    loadingVideo.play();
-  }, 4200);
-}
+
 
 
 
@@ -77,18 +71,9 @@ window.addEventListener('resize', adjustVideoSize);
 $(document).ready(function() {
   $("#button1").click(function() {
     stopVid();
-    playVid();
     var video = document.getElementById('content');
-    var isMobile = isMobileDevice();
     setTimeout(function() {
-      if (window.innerWidth <= 767) {
-         $("#mobile-div").remove();
-      } if (isMobile) {
-        video.src = "Loading1.gif";
-        video.play();
-        video.src = "Reel.mp4";
-        video.play();
-      } if (Count == 0) {
+        if (Count == 0) {
         video.src = "Stranger.mp4";
         Count = Count + 1;
       } else if (Count == 1) {
@@ -104,24 +89,15 @@ $(document).ready(function() {
         Count = 0;
       }
     }, 750);
+    playVid();
     disableMute();
   });
 
   $("#button2").click(function() {
     stopVid();
-    playVid();
     var video = document.getElementById('content');
-    var isMobile = isMobileDevice();
     setTimeout(function() {
-      if (window.innerWidth <= 767) {
-         $("#mobile-div").remove();
-      }
-      if (isMobile) {
-        video.src = "Loading1.gif";
-        video.play();
-        video.src = "Reel.mp4";
-        video.play();
-      } if (Count == 0) {
+        if (Count == 0) {
         video.src = "Stranger.mp4";
         Count = Count + 1;
       } else if (Count == 1) {
@@ -137,6 +113,7 @@ $(document).ready(function() {
         Count = 0;
       }
     }, 750);
+    playVid();
     disableMute();
   });
 });
