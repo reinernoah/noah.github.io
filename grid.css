@@ -2,13 +2,11 @@
   .container {
     position: relative;
     margin: 0 auto;
-    max-width: 960px;
     padding: 40px;
     box-sizing: border-box;
     background-color: black;
     z-index:1;
-    top:200px;
-    transform: scale(2);
+    top:10%;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -174,13 +172,20 @@
   
   
   .responsive-image-mobile {
-    display: block;
-    bottom: 0%;
-    max-width: 20%;
+    top: 10%;
+    left: 15%;
+    width: 320px; /* Set the desired fixed width for the video */
+    height: 240px; /* Set the desired fixed height for the video */
+    transform: scale(2);
+    z-index: -1;
   }
     #mobile-div {
-    bottom: 0%;
-    max-width: 20%;
+    top: 10%;
+    left: 15%;
+    width: 320px; /* Set the desired fixed width for the video */
+    height: 240px; /* Set the desired fixed height for the video */
+    transform: scale(2);
+    z-index: -1;
     }
 
   #button1 {
