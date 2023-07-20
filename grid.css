@@ -184,7 +184,7 @@ html, body {
 
     /* #Couch {
     position: absolute;
-    bottom: 10%; /* Adjust the vertical position to 10% from the top */
+    bottom: 10%; 
     transform: translate(-50%, -50%); 
     max-width:100%;
     width: 100%;
