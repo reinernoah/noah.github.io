@@ -137,6 +137,9 @@
 
 /* Media queries for responsiveness */
 @media (max-width: 767px){
+  body {
+    background-color: black;
+    overflow: hidden;
   .container {
     max-width: 100%;
     top: 50%;
@@ -183,4 +186,5 @@
     transform: scale(2);
     cursor: pointer;
   }
+}
 }
