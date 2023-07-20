@@ -149,7 +149,6 @@
     top: 50%;
     padding: 20px;
     z-index: 0;
-    transform: scale(2);
   }
   
   #load {
@@ -157,7 +156,6 @@
     left: 15%;
     width: 320px; /* Set the desired fixed width for the video */
     height: 240px; /* Set the desired fixed height for the video */
-    transform: scale(2);
     z-index: -1;
   }
   #video {
@@ -166,10 +164,8 @@
     transform: translate(-50%, -50%);
     width: 320px; /* Set the desired fixed width for the video */
     height: 240px; /* Set the desired fixed height for the video */
-    transform: scale(2);
     z-index: -1;
   }
-  
   
   .responsive-image-mobile {
     display: block;
@@ -180,7 +176,6 @@
     position: absolute;
     top: 20%;
     right: 20%;
-    transform: scale(2);
     cursor: pointer;
   }
 
@@ -188,7 +183,6 @@
     position: absolute;
     top: 40%;
     right: 20%;
-    transform: scale(2);
     cursor: pointer;
   }
 }
