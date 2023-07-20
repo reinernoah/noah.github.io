@@ -152,14 +152,7 @@ html, body {
     max-width: 100%;
     padding: 20px;
     z-index: 0;
-  }
-
-  #video {
-    position: absolute;
-    transform: translate(-50%, -50%); /* Move the element left by half of its width to center it */
-    width: 320px; /* Set the desired fixed width for the video */
-    height: 240px; /* Set the desired fixed height for the video */
-    z-index: -1;
+    overflow: hidden;
   }
   
   .responsive-image-mobile {
@@ -180,7 +173,7 @@ html, body {
     z-index: -1;
   }
   
-    #load, #hand, #mail, #cv, #button4, #button3 {
+    #load, #video,#hand, #mail, #cv, #button4, #button3 {
     display: none;
   }
 
