@@ -16,7 +16,9 @@
     justify-content: center;
     
   }
-
+  .responsive-image-mobile {
+    display: none;
+  }
   
   .responsive-image {
     display: block;
@@ -49,7 +51,7 @@
   
   #video {
     position: absolute;
-    top: 49%;
+    top: 50%;
     left: 46%;
     transform: translate(-50%, -50%);
     width: 30%;
@@ -133,7 +135,6 @@
 
 }
 
-/* Media queries for responsiveness */
 /* Media queries for responsiveness */
 @media (max-width: 767px){
   .container {
