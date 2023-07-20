@@ -2,16 +2,58 @@
 <html>
 <head>
   <title> Animation by Noah Reiner </title>
-<head>
-  <title> Animation by Noah Reiner </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="grid.css">
+  <meta property="og:image" content="Thumbnail.gif">
+  <link rel="stylesheet" type="text/css" href="grid.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0;maximum">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="code.js"></script>
 </head>
- <div class="container">
-    <img src="Clayvision.png" alt="Claymation" class="centered-photo">
-  </div>
-  <div class="loading-overlay">
-    <img src="Loading.gif" alt="Loading" class="loading-gif">
+ 
+<body>
+  <div class="container">
+    <img src="Clayvision.png" alt="Clayvision" class="responsive-image">
+    <div id="load">
+        <source media="(max-width: 767px)" srcset="Loading.gif">
+        <video id="loading" width="100%" height="auto" class="responsive-video" muted loop>
+          <source src="Loading.webm" type="video/webm">
+        </video>
+    </div>
+    <div id="video">
+      <img id="black" src="Black.png" alt="Black" class="responsive-image" muted>
+    </div>
+    <div id="video">
+      <video id="content" class="responsive-video" autoplay loop muted playsinline>
+        <source src="Friend.webm" type="video/webm">
+      </video>
+    </div>
+    <div id="cv">
+      <video id="resume" class="responsive-video" muted>
+        <source src="Resume.webm" type="video/webm">
+      </video>
+    </div>
+    <div id="mail">
+      <video id="gmail" class="responsive-video" muted>
+        <source src="gmail.webm" type="video/webm">
+      </video>
+    </div>
+    <div id="vimeo">
+      <video id="movies" class="responsive-video" muted>
+        <source src="vimeo.webm" type="video/webm">
+      </video>
+    </div>
+    <div id="hand">
+      <video id="control">
+        <source src="hand1.webm" type="video/webm">
+      </video>
+    </div>
+    <div id="button1" class="grid"></div>
+    <div id="button2" class="grid"></div>
+    <a href="mailto:noahmreiner@gmail.com">
+      <div id="button4" class="grid2"></div>
+    </a>
+    <a href="https://vimeo.com/845146253" target="_blank">
+      <div id="button3" class="grid2"></div>
+    </a>
   </div>
 </body>
 </html>
