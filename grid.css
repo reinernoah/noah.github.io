@@ -160,11 +160,13 @@
     z-index: -1;
   }
   #video {
-    top: 10%;
-    left: 15%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 10%; /* Adjust the vertical position to 10% from the top */
+    left: 50%; /* Center horizontally using 50% left position */
+    transform: translateX(-50%); /* Move the element left by half of its width to center it */
     width: 320px; /* Set the desired fixed width for the video */
     height: 240px; /* Set the desired fixed height for the video */
+    transform: scale(2);
     z-index: -1;
   }
   
