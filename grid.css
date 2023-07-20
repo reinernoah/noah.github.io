@@ -137,14 +137,13 @@
 
 /* Media queries for responsiveness */
 @media (max-width: 767px){
-  html {
-    overflow: hidden;
-  }
+html, body {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
   
-  body {
-    background-color: black;
-    overflow: hidden;
-  }
   .container {
     max-width: 100%;
     top: 50%;
