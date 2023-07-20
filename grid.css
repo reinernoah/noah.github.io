@@ -28,8 +28,6 @@ body {
   
   #load {
     position: relative;
-    top: 47%;
-    left: 65%;
     transform: translate(-50%, -50%);
     width: 50%;
     max-width: 40%;
@@ -39,8 +37,6 @@ body {
   
   #video {
     position: relative;
-    top: 50%;
-    left: 46%;
     transform: translate(-50%, -50%);
     width: 30%;
     max-width: 100%;
