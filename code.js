@@ -13,23 +13,15 @@ function isMobileDevice() {
 
 // Disable mute
 function disableMute() {
-  var isMobile = isMobileDevice();
-  if (isMobile) {
-    var gif = new Image();
-    gif.src = "Loading1.gif";
-    document.body.appendChild(gif);
-  }
-  else {
   var video = document.getElementById('content');
   video.muted = false;
-  }
 }
+
 
 function playVid() {
   var vid = document.getElementById('control');
   vid.play();
 }
-
 
 
 setTimeout(function() {
