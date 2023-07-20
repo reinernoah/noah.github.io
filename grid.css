@@ -171,5 +171,8 @@
     max-width: 50%; /* Adjust the maximum width as needed */
     height: auto;
   }
+    #load, #hand, #mail, #cv, #button4, #button3 {
+    display: none;
+  }
 
 }
