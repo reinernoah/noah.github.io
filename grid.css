@@ -158,9 +158,9 @@ html, body {
   .responsive-image-mobile {
     display: block;
     position: absolute;
-    top: 10%; 
     transform: translate(-50%, -50%);
-    max-width: 50%; /* Adjust the maximum width as needed */
+    max-width: 100%; /* Adjust the maximum width as needed */
+    width: 100%;
     height: auto;
   }
 
@@ -171,6 +171,7 @@ html, body {
     max-width:100%;
     width: 100%;
     z-index: -1;
+    transform: scale(0.4);
   }
   
     #load, #video,#hand, #mail, #cv, #button4, #button3 {
