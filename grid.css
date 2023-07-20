@@ -1,7 +1,7 @@
 body {
     background-color: black;
     overflow: hidden;
-  
+}
   .container {
     position: relative;
     margin: 0 auto;
@@ -20,7 +20,6 @@ body {
   }
   
   .responsive-image, .responsive-video {
-    position: relative;
     display: block;
     max-width: 100%;
     height: auto;
@@ -120,5 +119,4 @@ body {
       height: 6%; /* Adjust the height as needed */
       z-index: 2;
     }
-}
 
