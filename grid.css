@@ -1,4 +1,8 @@
-@media (min-width: 768px) {
+  body {
+    background-color: black;
+    overflow: hidden;
+
+  
   .container {
     position: relative;
     margin: 0 auto;
@@ -12,13 +16,7 @@
     justify-content: center;
     
   }
-  
 
-  body {
-    background-color: black;
-    overflow: hidden;
-
-  }
   
   .responsive-image {
     display: block;
@@ -28,9 +26,7 @@
     height: auto;
     margin: 0 auto;
   }
-    .responsive-image-mobile {
-    display: none;
-  }
+
   .responsive-video {
     display: block;
     top: 25%;
@@ -85,11 +81,10 @@
     position: absolute;
     height: 60%;
     width: 100%;
-    top: 0;
-    right: 10%;
+    top: 10%;
+    right: -15%;
     margin-right: -65%;
-    padding-right: 15px;
-    overflow: hidden;
+    padding-right: 10%;
     background-color: transparent;
   }
   
@@ -135,10 +130,6 @@
       height: 6%; /* Adjust the height as needed */
       z-index: 2;
     }
-   
-    #mobile-div {
-      display: none
-    }
 
 }
 
@@ -175,11 +166,6 @@
     bottom: 10%;
     max-width: 20%;
   }
-    #mobile-div {
-    bottom: 10%;
-    max-width: 20%;
-    }
-
   #button1 {
     position: absolute;
     top: 20%;
