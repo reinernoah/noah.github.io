@@ -48,6 +48,10 @@
     height: auto;
     z-index: 2;
   }
+
+  #load {
+  display: none;
+  }
   
   #video {
     position: absolute;
@@ -169,6 +173,16 @@ html, body {
     max-width: 50%; /* Adjust the maximum width as needed */
     height: auto;
   }
+
+    #Couch {
+    position: absolute;
+    bottom: 10%; /* Adjust the vertical position to 10% from the top */
+    transform: translate(-50%, -50%); /* Move the element left by half of its width to center it */
+    width: 320px; /* Set the desired fixed width for the video */
+    height: 240px; /* Set the desired fixed height for the video */
+    z-index: -1;
+  }
+  
     #load, #hand, #mail, #cv, #button4, #button3 {
     display: none;
   }
