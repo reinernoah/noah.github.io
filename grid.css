@@ -27,7 +27,7 @@ body {
   }
   
   #load {
-    position: relative;
+    position: absolute;
     top: 47%;
     left: 65%;
     transform: translate(-50%, -50%);
@@ -38,7 +38,7 @@ body {
   }
   
   #video {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 46%;
     transform: translate(-50%, -50%);
@@ -49,7 +49,7 @@ body {
   }
   
   #cv {
-      position: relative;
+      position: absolute;
       top: 63%;
       left: 25%;
       cursor: pointer;
@@ -57,7 +57,7 @@ body {
       height: 15%; /* Adjust the height as needed */
   }
   #mail {
-      position: relative;
+      position: absolute;
       top: 60%;
       right: 25%;
       cursor: pointer;
@@ -67,7 +67,7 @@ body {
   }
   
   #hand {
-    position: relative;
+    position: absolute;
     height: 60%;
     width: 100%;
     top: 10%;
@@ -78,7 +78,7 @@ body {
   }
   
    #button1 {
-      position: relative;
+      position: absolute;
       top: 39%;
       right: 36%;
       cursor: pointer;
@@ -90,7 +90,7 @@ body {
     }
   
     #button2 {
-      position: relative;
+      position: absolute;
       top: 48%;
       right: 36%;
       cursor: pointer;
@@ -101,7 +101,7 @@ body {
     }
   
     #button3 {
-      position: relative;
+      position: absolute;
       top: 70%;
       left: 33%;
       cursor: pointer;
@@ -111,7 +111,7 @@ body {
     }
   
     #button4 {
-      position: relative;
+      position: absolute;
       top: 73%;
       right: 25%;
       cursor: pointer;
