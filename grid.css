@@ -1,51 +1,177 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  background-color: black;
-  overflow: hidden; /* Prevent scrolling on mobile */
-}
+  body {
+    background-color: black;
+    overflow: hidden;
 
-.container {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  height: 100vh;
-}
+  }
+  .container {
+    position: relative;
+    margin: 0 auto;
+    padding: 3%;
+    box-sizing: border-box;
+    background-color: black;
+    z-index:1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
 
-.centered-photo {
-  width: 100%;
-  height: auto;
-}
+  
+  .responsive-image {
+    display: block;
+    top: 25%;
+    right: 48%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
 
-.loading-overlay {
-  position: absolute;
-  top: 5%; /* Adjust the vertical position */
-  right: 5%; /* Adjust the horizontal position */
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
+  .responsive-video {
+    display: block;
+    top: 25%;
+    right: 49%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  #load {
+    position: absolute;
+    top: 47%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    max-width: 40%;
+    height: auto;
+    z-index: 2;
+  }
+  
+  #video {
+    position: absolute;
+    top: 49%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+    z-index: -1;
+  }
 
-.loading-gif {
-  max-width: 200px;
-  height: auto;
-}
+  
+  #cv {
+      position: absolute;
+      top: 63%;
+      left: 25%;
+      cursor: pointer;
+      width:25%; /* Adjust the width as needed */
+      height: 15%; /* Adjust the height as needed */
+  }
+  #mail {
+      position: absolute;
+      top: 60%;
+      right: 25%;
+      cursor: pointer;
+      width: 25%; /* Adjust the width as needed */
+      height: 15%; /* Adjust the height as needed */
+      z-index: 2;
+  }
+  
+  #hand {
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    top: 10%;
+    right: -15%;
+    margin-right: -65%;
+    padding-right: 10%;
+    background-color: transparent;
+  }
+  
+   #button1 {
+      position: absolute;
+      top: 39%;
+      right: 36%;
+      cursor: pointer;
+      width: 4%; /* Adjust the width as needed */
+      height: 4%; /* Adjust the height as needed */
+      transform: translate(50%, -50%);
+      z-index: 2;
+      
+    }
+  
+    #button2 {
+      position: absolute;
+      top: 48%;
+      right: 36%;
+      cursor: pointer;
+      width: 4%; /* Adjust the width as needed */
+      height: 4%; /* Adjust the height as needed */
+      transform: translate(50%, -50%);
+      z-index: 2;
+    }
+  
+    #button3 {
+      position: absolute;
+      top: 70%;
+      left: 33%;
+      cursor: pointer;
+      width:11%; /* Adjust the width as needed */
+      height: 10%; /* Adjust the height as needed */
+      z-index: 2;
+    }
+  
+    #button4 {
+      position: absolute;
+      top: 73%;
+      right: 25%;
+      cursor: pointer;
+      width: 25%; /* Adjust the width as needed */
+      height: 6%; /* Adjust the height as needed */
+      z-index: 2;
+    }
 
-.video-container {
-  position: absolute;
-  top: 100%; /* Position the video container directly below the Claymation.png */
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.video {
-  width: 100%; /* Set the width to 100% to maintain the aspect ratio */
-  height: auto;
+/* Media queries for responsiveness */
+@media (max-width: 767px){
+  .container {
+    max-width: 100%;
+    top: 50%;
+    padding: 20px;
+    z-index: 0;
+    transform: scale(2);
+  }
+  
+  #load {
+    top: 10%;
+    left: 15%;
+    width: 320px; /* Set the desired fixed width for the video */
+    height: 240px; /* Set the desired fixed height for the video */
+    transform: scale(2);
+    z-index: -1;
+  }
+  #video {
+    top: 10%;
+    left: 15%;
+    width: 320px; /* Set the desired fixed width for the video */
+    height: 240px; /* Set the desired fixed height for the video */
+    transform: scale(2);
+    z-index: -1;
+  }
+
+  #button1 {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    transform: scale(2);
+    cursor: pointer;
+  }
+
+  #button2 {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    transform: scale(2);
+    cursor: pointer;
+  }
 }
