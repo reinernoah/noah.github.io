@@ -176,6 +176,7 @@ html, body {
     bottom: 10%; /* Adjust the vertical position to 10% from the top */
     transform: translate(-50%, -50%); /* Move the element left by half of its width to center it */
     max-width:100%;
+    width: 100%;
     z-index: -1;
   }
   
