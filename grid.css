@@ -150,14 +150,12 @@ html, body {
   
   .container {
     max-width: 100%;
-    top: 50%;
     padding: 20px;
     z-index: 0;
   }
 
   #video {
     position: absolute;
-    top: 10%; /* Adjust the vertical position to 10% from the top */
     transform: translate(-50%, -50%); /* Move the element left by half of its width to center it */
     width: 320px; /* Set the desired fixed width for the video */
     height: 240px; /* Set the desired fixed height for the video */
@@ -167,7 +165,7 @@ html, body {
   .responsive-image-mobile {
     display: block;
     position: absolute;
-    top: 50%; 
+    top: 10%; 
     transform: translate(-50%, -50%);
     max-width: 50%; /* Adjust the maximum width as needed */
     height: auto;
@@ -177,8 +175,7 @@ html, body {
     position: absolute;
     bottom: 10%; /* Adjust the vertical position to 10% from the top */
     transform: translate(-50%, -50%); /* Move the element left by half of its width to center it */
-    width: 320px; /* Set the desired fixed width for the video */
-    height: 240px; /* Set the desired fixed height for the video */
+    max-width:100%;
     z-index: -1;
   }
   
