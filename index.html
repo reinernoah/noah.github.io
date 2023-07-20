@@ -10,9 +10,11 @@
 <body>
   <div class="container">
     <img src="Clayvision.png" alt="Clayvision" class="responsive-image">
-  <div id="load">
-    <img src="Loading.gif" width="100%" height="auto" class="responsive-video">
-  </div>
+    <div id="load">
+        <video id="loading" width="100%" height="auto" class="responsive-video" muted loop>
+          <source media="(max-width: 767px)" srcset="Loading.gif">
+          <source src="Loading.webm" type="video/webm">
+        </video>
     <div id="video">
       <img id="black" src="Black.png" alt="Black" class="responsive-image" muted>
     </div>
