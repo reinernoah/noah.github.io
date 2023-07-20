@@ -134,10 +134,8 @@
 }
 
 /* Media queries for responsiveness */
+/* Media queries for responsiveness */
 @media (max-width: 767px){
-    body {
-    background-color: black;
-    overflow: hidden;
   .container {
     max-width: 100%;
     top: 50%;
@@ -169,7 +167,6 @@
     bottom: 10%;
     max-width: 20%;
   }
-      
   #button1 {
     position: absolute;
     top: 20%;
@@ -185,5 +182,4 @@
     transform: scale(2);
     cursor: pointer;
   }
-}
 }
