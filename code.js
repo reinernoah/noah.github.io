@@ -7,10 +7,22 @@ setTimeout(function() {
   image.src = "Glitch.gif";
 }, 0);
 
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  }
+
 // Disable mute
 function disableMute() {
+  var isMobile = isMobileDevice();
+  if (isMobile) {
+    var gif = new Image();
+    gif.src = "Loading1.gif";
+    document.body.appendChild(gif);
+  }
+  else {
   var video = document.getElementById('content');
   video.muted = false;
+  }
 }
 
 function playVid() {
@@ -18,22 +30,11 @@ function playVid() {
   vid.play();
 }
 
-function isMobileDevice() {
-    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-  }
+
 
 setTimeout(function() {
     document.getElementById("loading").play();
 }, 3900);
-
-function playMobileGif() {
-  var isMobile = isMobileDevice();
-  if (isMobile) {
-    var gif = new Image();
-    gif.src = "Loading1.gif";
-    document.body.appendChild(gif);
-  }
-}
 
 function stopVid() {
   var media = document.getElementById('loading');
