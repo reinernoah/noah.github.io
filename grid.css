@@ -1,7 +1,6 @@
-  body {
+body {
     background-color: black;
     overflow: hidden;
-
   
   .container {
     position: relative;
@@ -28,7 +27,6 @@
     height: auto;
     margin: 0 auto;
   }
-
   .responsive-video {
     display: block;
     top: 25%;
@@ -48,10 +46,6 @@
     height: auto;
     z-index: 2;
   }
-
-  #Couch {
-  display: none;
-  }
   
   #video {
     position: absolute;
@@ -63,7 +57,6 @@
     height: auto;
     z-index: -1;
   }
-
   
   #cv {
       position: absolute;
@@ -136,64 +129,5 @@
       height: 6%; /* Adjust the height as needed */
       z-index: 2;
     }
-
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 767px){
-html, body {
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-}
-  
-  .container {
-    max-width: 100%;
-    padding: 20px;
-    z-index: 0;
-    overflow: hidden;
-  }
-  
-   /* .responsive-video {
-    display: block;
-    top: 25%;
-    right: 49%;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }*/
-  
-   /* .responsive-image {
-    display: block;
-    top: 25%;
-    right: 48%;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-  } */
-  
- /* .responsive-image-mobile {
-    display: block;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    max-width: 100%; 
-    width: 100%;
-    height: auto;
-  } */
-
-    /* #Couch {
-    position: absolute;
-    bottom: 10%; 
-    transform: translate(-50%, -50%); 
-    max-width:100%;
-    width: 100%;
-    z-index: -1;
-    transform: scale(0.4);
-  } */ 
-  
-    .responsive-image-mobile, .responsive-image, #Couch,#load, #video,#hand, #mail, #cv, #button4, #button3 {
-    display: none;
-  }
-
-}
