@@ -1,19 +1,10 @@
 var Count = 0;
 
-setTimeout(function() {
-    document.getElementById("loading").play();
-  }, 5000);
+
 
 setTimeout(function() {
   var image = document.getElementById("black");
   image.src = "Glitch.gif";
-}, 3000);
-
-setTimeout(function() {
-  var isMobile = isMobileDevice();
-  if (isMobile) {
-    var video = document.getElementById('mobile-div');
-    image.src = "Couch.png";}
 }, 0);
 
 // Disable mute
@@ -31,6 +22,19 @@ function isMobileDevice() {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
   }
 
+setTimeout(function() {
+    document.getElementById("loading").play();
+}, 3900);
+
+function playMobileGif() {
+  var isMobile = isMobileDevice();
+  if (isMobile) {
+    var gif = new Image();
+    gif.src = "Loading1.gif";
+    document.body.appendChild(gif);
+  }
+}
+
 function stopVid() {
   var media = document.getElementById('loading');
   media.pause();
@@ -46,8 +50,6 @@ function resume() {
   var video = document.getElementById('resume');
   video.play();
 }
-
-
 
 
 
@@ -71,13 +73,14 @@ window.addEventListener('resize', adjustVideoSize);
 $(document).ready(function() {
   $("#button1").click(function() {
     stopVid();
+    playVid();
     var video = document.getElementById('content');
     setTimeout(function() {
-        if (Count == 0) {
-        video.src = "Stranger.mp4";
+      if (Count == 0) {
+        video.src = "Reel.mp4";
         Count = Count + 1;
       } else if (Count == 1) {
-        video.src = "Banjo.mp4";
+        video.src = "Stranger.mp4";
         Count = Count + 1;
         email();
         resume();
@@ -85,20 +88,20 @@ $(document).ready(function() {
         video.src = "Jerry.mp4";
         Count = Count + 1;
       } else if (Count == 3) {
-        video.src = "OJ.mp4";
+        video.src = "Banjo.mp4";
         Count = 0;
       }
     }, 750);
-    playVid();
     disableMute();
   });
 
   $("#button2").click(function() {
     stopVid();
+    playVid();
     var video = document.getElementById('content');
     setTimeout(function() {
-        if (Count == 0) {
-        video.src = "Stranger.mp4";
+      if (Count == 0) {
+        video.src = "Reel.mp4";
         Count = Count + 1;
       } else if (Count == 1) {
         video.src = "Kla.mp4";
@@ -108,12 +111,8 @@ $(document).ready(function() {
       } else if (Count == 2) {
         video.src = "Sergio.mp4";
         Count = Count + 1;
-      } else if (Count == 3) {
-        video.src = "OJ.mp4";
-        Count = 0;
-      }
+      } 
     }, 750);
-    playVid();
     disableMute();
   });
 });
