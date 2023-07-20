@@ -3,6 +3,7 @@
 <head>
   <meta property="og:image" content="Thumbnail.gif">
   <link rel="stylesheet" type="text/css" href="grid.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="code.js"></script>
 </head>
@@ -11,12 +12,16 @@
   <div class="container">
     <img src="Clayvision.png" alt="Clayvision" class="responsive-image">
     <div id="load">
+        <source media="(max-width: 767px)" srcset="Loading.gif">
         <video id="loading" width="100%" height="auto" class="responsive-video" muted loop>
-          <source media="(max-width: 767px)" srcset="Loading.gif">
           <source src="Loading.webm" type="video/webm">
         </video>
+    </div>
     <div id="video">
       <img id="black" src="Black.png" alt="Black" class="responsive-image" muted>
+    </div>
+    <div id="Couch">
+      <img id="Couch" src="Couch.png" alt="Couch" class="responsive-image-mobile" muted>
     </div>
     <div id="video">
       <video id="content" class="responsive-video" autoplay loop muted playsinline>
