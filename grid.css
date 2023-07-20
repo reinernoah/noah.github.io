@@ -170,9 +170,14 @@
   
   .responsive-image-mobile {
     display: block;
-    bottom: 10%;
-    max-width: 100%;
+    position: absolute;
+    top: 50%; /* Adjust the vertical positioning as needed */
+    left: 50%; /* Adjust the horizontal positioning as needed */
+    transform: translate(-50%, -50%);
+    max-width: 50%; /* Adjust the maximum width as needed */
+    height: auto;
   }
+  
   #button1 {
     position: absolute;
     top: 20%;
