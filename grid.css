@@ -164,8 +164,7 @@ html, body {
   .responsive-image-mobile {
     display: block;
     position: absolute;
-    top: 50%; /* Adjust the vertical positioning as needed */
-    left: 50%; /* Adjust the horizontal positioning as needed */
+    top: 50%; 
     transform: translate(-50%, -50%);
     max-width: 50%; /* Adjust the maximum width as needed */
     height: auto;
