@@ -155,24 +155,42 @@ html, body {
     overflow: hidden;
   }
   
-  .responsive-image-mobile {
+   /* .responsive-video {
+    display: block;
+    top: 25%;
+    right: 49%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }*/
+  
+   /* .responsive-image {
+    display: block;
+    top: 25%;
+    right: 48%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  } */
+  
+ /* .responsive-image-mobile {
     display: block;
     position: absolute;
     transform: translate(-50%, -50%);
-    max-width: 100%; /* Adjust the maximum width as needed */
+    max-width: 100%; 
     width: 100%;
     height: auto;
-  }
+  } */
 
-    #Couch {
+    /* #Couch {
     position: absolute;
     bottom: 10%; /* Adjust the vertical position to 10% from the top */
-    transform: translate(-50%, -50%); /* Move the element left by half of its width to center it */
+    transform: translate(-50%, -50%); 
     max-width:100%;
     width: 100%;
     z-index: -1;
     transform: scale(0.4);
-  }
+  } */ 
   
     #load, #video,#hand, #mail, #cv, #button4, #button3 {
     display: none;
