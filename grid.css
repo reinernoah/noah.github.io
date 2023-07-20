@@ -137,6 +137,10 @@
 
 /* Media queries for responsiveness */
 @media (max-width: 767px){
+  html {
+    overflow: hidden;
+  }
+  
   body {
     background-color: black;
     overflow: hidden;
@@ -159,6 +163,7 @@
   #video {
     top: 10%;
     left: 15%;
+    transform: translate(-50%, -50%);
     width: 320px; /* Set the desired fixed width for the video */
     height: 240px; /* Set the desired fixed height for the video */
     transform: scale(2);
