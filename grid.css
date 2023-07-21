@@ -132,6 +132,7 @@
 	background-color: transparent;
 	background-position: cover;
 	overflow: hidden;
+	transform: scale(2);
 }
 	
 .mobile-gif {
