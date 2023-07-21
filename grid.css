@@ -30,7 +30,11 @@
 	height:auto;
 	background-color: transparent;
 }
-	
+
+.mobile-gif {
+  display: none;
+}
+
 #video {
 	position: absolute;
 	top: 33.5%;
@@ -68,6 +72,64 @@
 	width:5%;
 	height:7%;
 	margin:0;
+	padding:0;
+	border:none;
+	outline:0px solid white;
+	display:inline-block;
+}
+
+.grid2 {
+	position:absolute;
+	width:20%;
+	height:5%;
+	width:30%;
+	height:7%;
+	margin:0;
+	padding:0;
+	border:none;
+	outline:0px solid blue;
+	display:inline-block;
+}
+#button1{
+	position: absolute;
+	top: 35%;
+	right:1%;
+	cursor:pointer;
+}
+#button2{
+	position: absolute;
+	top:44%;
+	right:1%;
+	cursor:pointer;
+}
+#button3{
+	position: absolute;
+	bottom: 19%;
+	left:40%;
+	left:35%;
+	cursor:pointer;
+}
+
+#button4{
+	position: absolute;
+	bottom:19%;
+	right:0%;
+	left:77%;
+	cursor:pointer;
+}
+
+
+@media only screen and (max-width: 767px) {
+  /* Show the alternative GIF on mobile devices */
+  .mobile-gif {
+    display: block;
+  }
+
+  /* Hide the original video element on mobile devices */
+  #loading {
+    display: none;
+  }
+}
 	padding:0;
 	border:none;
 	outline:0px solid white;
