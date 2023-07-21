@@ -127,6 +127,8 @@
   /* Hide the original video element on mobile devices */
   #loading {
     display: none;
+    top:25%;
+    right:5%;
   }
 
 .grid2 {
