@@ -44,11 +44,18 @@ function resume() {
   video.play();
 }
 
+  function handleMobileButtonClick() {
+    // Hide the alternative GIF on mobile devices
+    var mobileGif = document.querySelector('.mobile-gif');
+    mobileGif.style.display = 'none';
+  }
+
 // Create a hover effect that changes the color of a square to black when the mouse passes over it, leaving a (pixel) trail through the grid
 // Allow the click of a button to prompt the user to create a new grid
 $(document).ready(function() {
   $("#button1").click(function() {
     stopVid();
+    handleMobileButtonClick();
     playVid();
     var video = document.getElementById('content');
     setTimeout(function() {
@@ -74,6 +81,7 @@ $(document).ready(function() {
   $("#button2").click(function() {
     stopVid();
     playVid();
+    handleMobileButtonClick();
     var video = document.getElementById('content');
     setTimeout(function() {
       if (Count == 0) {
