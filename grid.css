@@ -26,7 +26,7 @@
 	position: absolute;
 	width:100%;
 	top:12%;
-	left:55%;
+	right:5%;
 	height:auto;
 	background-color: transparent;
 }
@@ -125,7 +125,7 @@
   }
 
   /* Hide the original video element on mobile devices */
-  #loading {
+  #load {
     display: none;
     top:25%;
     right:5%;
