@@ -43,6 +43,10 @@
   display: none; /* Hide the picture by default */
 }
 
+#turn {
+    display: none;
+  }
+
 #video {
 	position: absolute;
 	top: 33.5%;
@@ -130,7 +134,9 @@
   .mobile-gif {
     display: none;
   }
-
+#turn {
+    display: block;
+  }
   .mobile-only-picture {
     display: block; /* Show the picture for mobile devices in portrait mode */
     position: fixed; /* Position the picture at the bottom of the screen */
@@ -197,7 +203,9 @@
     width: 30%;
     height: auto;
   }
-
+  #turn {
+    display: none;
+  }
   /* Hide the original video element on mobile devices */
   #loading {
     display: none;
