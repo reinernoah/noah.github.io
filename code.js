@@ -74,7 +74,7 @@ $(document).ready(function() {
         video.src = "Banjo.mp4";
         Count = 0;
       }
-    }, 0);
+    }, 700);
     disableMute();
   });
 
@@ -96,7 +96,7 @@ $(document).ready(function() {
         video.src = "Sergio.mp4";
         Count = 0;
       } 
-    }, 0);
+    }, 700);
     disableMute();
   });
 });
