@@ -127,15 +127,9 @@
   }
 
   /* Hide the original video element on mobile devices */
-  #loading {
+  #load, #mail, #cv, #hand,  {
     display: none;
   }
-}
-	padding:0;
-	border:none;
-	outline:0px solid white;
-	display:inline-block;
-}
 
 .grid2 {
 	position:absolute;
