@@ -137,12 +137,13 @@
 #turn {
     display: block;
   }
+	
   .mobile-only-picture {
     display: block; /* Show the picture for mobile devices in portrait mode */
-    position: fixed; /* Position the picture at the bottom of the screen */
-    bottom: 0;
+    position: absolute; /* Position the picture at the bottom of the screen */
+    top: 90%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-25%);
     width: 100%; /* Set the width to span the full screen */
     /* Add any other styles you want for the picture */
   }
@@ -193,7 +194,7 @@
 	left:77%;
 	cursor:pointer;
 }
-	
+}	
 @media only screen and (max-width: 767px) and (orientation: landscape) {
   /* Show the alternative GIF on mobile devices */
   .mobile-gif {
@@ -249,4 +250,6 @@
 	right:0%;
 	left:77%;
 	cursor:pointer;
+}
+
 }
