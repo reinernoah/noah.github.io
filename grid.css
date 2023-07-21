@@ -39,6 +39,10 @@
   display: block;
 }
 
+.mobile-only-picture {
+  display: none; /* Hide the picture by default */
+}
+
 #video {
 	position: absolute;
 	top: 33.5%;
@@ -127,6 +131,16 @@
     display: none;
   }
 
+  .mobile-only-picture {
+    display: block; /* Show the picture for mobile devices in portrait mode */
+    position: fixed; /* Position the picture at the bottom of the screen */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Set the width to span the full screen */
+    /* Add any other styles you want for the picture */
+  }
+	
   /* Hide the original video element on mobile devices */
   #load {
     display: none;
