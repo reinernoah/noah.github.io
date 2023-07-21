@@ -136,13 +136,19 @@
 	transform: scale(2);
 }
 	
+.load {
+    display: block;
+    z-index: 1;
+  }
+	
 #mobile-gif {
     display: block;
     z-index: 1;
   }
 
+	
   /* Hide the original video element on mobile devices */
-  #load, #mail, #cv, #hand, .grid2, #button3, #button4, #button5  {
+  #loading, #mail, #cv, #hand, .grid2, #button3, #button4, #button5  {
     display: none;
   }
 
