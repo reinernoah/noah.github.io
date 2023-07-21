@@ -122,8 +122,8 @@
   /* Show the alternative GIF on mobile devices */
   .mobile-gif {
     display: block;
-    top: 30%;
-    right:0.5%;
+    top: 18%;
+    right:0;
   }
 
   /* Hide the original video element on mobile devices */
