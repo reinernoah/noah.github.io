@@ -121,7 +121,7 @@
 @media only screen and (max-width: 767px) {
   /* Show the alternative GIF on mobile devices */
   .mobile-gif {
-    display: block;
+    display: none;
   }
 
   /* Hide the original video element on mobile devices */
