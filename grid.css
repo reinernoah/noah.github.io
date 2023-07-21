@@ -22,7 +22,8 @@
 	overflow: :0;
 	background-color: transparent;
 }
-#load{
+
+.load{
 	position: absolute;
 	width:100%;
 	top:25%;
@@ -31,8 +32,12 @@
 	background-color: transparent;
 }
 
-.mobile-gif {
+#mobile-gif {
   display: none;
+}
+
+#loading {
+  display: block
 }
 
 #video {
@@ -131,7 +136,7 @@
 	transform: scale(2);
 }
 	
-.mobile-gif {
+#mobile-gif {
     display: block;
     z-index: 1;
   }
